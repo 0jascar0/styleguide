@@ -192,7 +192,7 @@ function disableControl(element) {
   // Ensure every first collapse toggle for accordions is accessible
   // (cf. https://github.com/paypal/bootstrap-accessibility-plugin/issues/98):
   $('[aria-multiselectable="true"]').each(function() {
-    console.log($(this).find('[data-toggle="collapse"][data-parent]').first().attr({tabindex: 0}));
+    $(this).find('[data-toggle="collapse"][data-parent]').first().attr({tabindex: 0});
   });
 
 }) (jQuery);
@@ -492,10 +492,10 @@ $.printPreview = {
     var links = $('.dropdown-menu li a', $(this));
     var suggestions = [];
     links.each(function() {
-        suggestions.push({
-            title: $(this).html(),
-            link: $(this).attr('href')
-        });
+      suggestions.push({
+        title: $(this).html(),
+        link: $(this).attr('href')
+      });
     });
     if (!suggestions.length) {
       return;
@@ -515,9 +515,9 @@ $.printPreview = {
       templates: {
         empty: function() {
           return [
-            '<li><h3>',
+            '<li class="search-result-header"><strong>',
               title,
-            '</h3></li>',
+            '</strong></li>',
             '<li>',
               window.translations['global-search']['nothing-found'],
             '</li>',
@@ -525,9 +525,9 @@ $.printPreview = {
         },
         header: function() {
           return [
-            '<li><h3>',
+            '<li class="search-result-header"><strong>',
               title,
-            '</h3></li>'
+            '</strong></li>'
           ].join('');
         },
         dataset: '<ul><ul>',
@@ -548,14 +548,13 @@ $.printPreview = {
       }
     }, datasets)
     .on('typeahead:selected', function (event, selection) {
-  		event.preventDefault();
+      event.preventDefault();
       $(this).typeahead('val', '')
         .closest('.global-search').removeClass('has-input');
-  		window.location.replace(selection.link);
-  	})
+      window.location.replace(selection.link);
+    })
     .on('typeahead:open', function() {
       $(this).closest('.global-search').addClass('focused');
-      console.log($(this).typeahead('val'));
     })
     .on('typeahead:close', function () {
       $(this).closest('.global-search').removeClass('focused');
@@ -564,11 +563,11 @@ $.printPreview = {
       if (event.keyCode === 27) { // ESC
         $(this).closest('form').trigger('reset');
       } else if ($(this).typeahead('val')) {
-          $(this).closest('.global-search').addClass('has-input');
+        $(this).closest('.global-search').addClass('has-input');
       } else {
         $(this).closest('.global-search').removeClass('has-input');
-  		}
-  	});
+      }
+    });
 
     $('form', element)
       .on('submit', function() {
