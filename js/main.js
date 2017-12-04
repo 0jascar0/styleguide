@@ -36,7 +36,7 @@
   }
 
   // Insert the icons
-  $searchFields.after('<span class="icon icon--close" data-form-search-clear></span>');
+  $searchFields.after('<span class="icon icon--close" data-form-search-clear><span class="sr-only">Clear</span></span>');
   $('.form-search').append('<button class="icon icon--search icon--before"><span class="sr-only">Search</span></button>');
 
   $('body').on('click', '[data-form-search-clear]', function () {
@@ -330,7 +330,7 @@ $.printPreview = {
         footnoteLinks = "",
         linksIndex = 0;
 
-    $body.find('.nav-mobile, .drilldown, .nav-main, .header-separator, .nav-service, .nav-lang, .form-search, .yamm--select, header > div:first-child, footer, .alert, .icon--print, .social-sharing, form, .nav-process, .carousel-indicators, .carousel-control, .breadcrumb, .pagination-container').remove();
+    $body.find('.nav-mobile, .drilldown, .nav-main, .header-separator, .nav-service, .nav-lang, .form-search, .yamm--select, footer, .alert, .icon--print, .social-sharing, form, .nav-process, .carousel-indicators, .carousel-control, .breadcrumb, .pagination-container').remove();
 
     // if an element is passed, we want it to be the only thing to print out
     if (element) {
@@ -558,6 +558,7 @@ $.printPreview = {
     })
     .on('typeahead:close', function () {
       $(this).closest('.global-search').removeClass('focused');
+      $(this).closest('form').trigger('reset');
     })
     .on('keyup', function (event) {
       if (event.keyCode === 27) { // ESC

@@ -1,9 +1,9 @@
 <!doctype html>
-<!--[if lt IE 7 ]> <html lang="de" class="no-js ie6 oldie"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="de" class="no-js ie7 oldie"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="de" class="no-js ie8 oldie"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="de" class="no-js ie9"> <![endif]-->
-<!--[if gt IE 9 ]><!--><html lang="de" class="no-js no-ie"><!--<![endif]-->
+<!--[if lt IE 7 ]> <html lang="de" class="no-js ie6 oldie" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="de" class="no-js ie7 oldie" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="de" class="no-js ie8 oldie" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="de" class="no-js ie9" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if gt IE 9 ]><!--><html lang="de" class="no-js no-ie" itemscope itemtype="http://schema.org/WebPage"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -91,11 +91,13 @@
           </a>
           <div class="mod mod-searchfield global-search global-search-standard">
             <!-- begin: sitesearch desktop-->
-            <form class="form-horizontal form-search pull-right" role="form">
+            <form class="form-horizontal form-search pull-right">
               <h2 class="sr-only">Suche</h2>
               <label for="webguiedelines-search-standard" class="sr-only">Suche</label>
               <input id="webguiedelines-search-standard" class="form-control search-input" type="text" placeholder="Suche"/>
-              <span class="icon icon--close search-reset"></span>
+              <span class="icon icon--close search-reset">
+                <span class="sr-only">Zurücksetzen</span>
+              </span>
               <div class="search-results">
                 <div class="search-results-list"></div>
               </div>
@@ -212,7 +214,7 @@
               <div class="dropdown-menu" role="menu">
       
                 <div class="mod mod-searchfield global-search global-search-mobile">
-                  <form class="form" role="form">
+                  <form class="form">
                     <h2 class="sr-only">Suche</h2>
                     <label for="webguiedelines-search-mobile" class="sr-only">Suche</label>
                     <input id="webguiedelines-search-mobile" class="search-input form-control" type="text" placeholder="Suche">
@@ -828,7 +830,7 @@
 <h2>Benutzerfreundliche und barrierefreie Websites</h2>
 <p>Diese Webrichtlinien ermöglichen die Entwicklung moderner, benutzerfreundlicher und barrierefreier Webauftritte. Sie definieren die obligatorischen Markenelemente sowie die verbindlichen Navigations- und Inhaltsmodule. Sie führen weiterhin eine Reihe von Elementen ein, die direkt verwendet werden können.</p>
 <h2>Barrierefreiheit (Accessibility)</h2>
-<p>Die Bundesverwaltung ist gesetzlich verpflichtet, die Online-Informationen barrierefrei anzubieten. Die Vorgaben, Massnahmen und Hinweise für die Erstellung barrierefreier Websites sind im Kapitel &quot;Barrierefreiheit&quot;</a> beschrieben.</p>
+<p>Die Bundesverwaltung ist gesetzlich verpflichtet, die Online-Informationen barrierefrei anzubieten. Die Vorgaben, Massnahmen und Hinweise für die Erstellung barrierefreier Websites sind im Kapitel <a href="./docs/07-accessibility.html">«Barrierefreiheit»</a> beschrieben.</p>
 <h2>Responsive Design</h2>
 <p>Die Anzeige ist für Webbrowser sowohl auf Desktop-Computern wie auch auf Laptops, Tablets und Smartphones optimiert.</p>
 <h2>Zielgruppen</h2>
@@ -903,14 +905,14 @@
           <img class="visible-xs" src="../img/logo-CH.svg" onerror="this.onerror=null; this.src='../img/logo-CH.png'" alt="back to home">
         </div>
       
-        <address>
+        <div class="footer-address">
           <span class="hidden-xs">©2015 Bundeskanzlei</span>
           <nav class="pull-right">
             <ul>
               <li><a href="http://www.disclaimer.admin.ch/terms_and_conditions.html">Rechtliches</a></li>
             </ul>
           </nav>
-        </address>
+        </div>
       </footer>
     </div>
 

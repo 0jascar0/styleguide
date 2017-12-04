@@ -1,9 +1,9 @@
 <!doctype html>
-<!--[if lt IE 7 ]> <html lang="de" class="no-js ie6 oldie"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="de" class="no-js ie7 oldie"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="de" class="no-js ie8 oldie"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="de" class="no-js ie9"> <![endif]-->
-<!--[if gt IE 9 ]><!--><html lang="de" class="no-js no-ie"><!--<![endif]-->
+<!--[if lt IE 7 ]> <html lang="de" class="no-js ie6 oldie" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="de" class="no-js ie7 oldie" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="de" class="no-js ie8 oldie" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="de" class="no-js ie9" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if gt IE 9 ]><!--><html lang="de" class="no-js no-ie" itemscope itemtype="http://schema.org/WebPage"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -91,11 +91,13 @@
           </a>
           <div class="mod mod-searchfield global-search global-search-standard">
             <!-- begin: sitesearch desktop-->
-            <form class="form-horizontal form-search pull-right" role="form">
+            <form class="form-horizontal form-search pull-right">
               <h2 class="sr-only">Suche</h2>
               <label for="webguiedelines-search-standard" class="sr-only">Suche</label>
               <input id="webguiedelines-search-standard" class="form-control search-input" type="text" placeholder="Suche"/>
-              <span class="icon icon--close search-reset"></span>
+              <span class="icon icon--close search-reset">
+                <span class="sr-only">Zurücksetzen</span>
+              </span>
               <div class="search-results">
                 <div class="search-results-list"></div>
               </div>
@@ -212,7 +214,7 @@
               <div class="dropdown-menu" role="menu">
       
                 <div class="mod mod-searchfield global-search global-search-mobile">
-                  <form class="form" role="form">
+                  <form class="form">
                     <h2 class="sr-only">Suche</h2>
                     <label for="webguiedelines-search-mobile" class="sr-only">Suche</label>
                     <input id="webguiedelines-search-mobile" class="search-input form-control" type="text" placeholder="Suche">
@@ -857,7 +859,7 @@
   </a></header>
 <nav class="nav-main"></nav>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-01-logo" aria-expanded="false">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-01-logo" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-header-01-logo" role="note">
@@ -919,7 +921,7 @@
 	<!-- Other smart links can be added for main website functionalities -->
 </ul>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-02-accessibility-navigation" aria-expanded="true">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-02-accessibility-navigation" aria-expanded="true" title="Show Source Code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse in" aria-expanded="true" id="code-02-header-02-accessibility-navigation" role="note">
@@ -992,7 +994,7 @@
   </a></header>
 <nav class="nav-main"></nav>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-03-service-navigation" aria-expanded="false">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-03-service-navigation" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-header-03-service-navigation" role="note">
@@ -1051,7 +1053,7 @@
   <div class="component-example">
     <div class="clearfix">
       <header>
-	<form class="form-horizontal form-search pull-right" role="form">
+	<form class="form-horizontal form-search pull-right">
 		<h2 class="sr-only">Search</h2>
 		<label for="search-field" class="sr-only">Search:</label>
 		<input id="search-field" class="form-control search-field" type="text" placeholder="Search">
@@ -1063,12 +1065,12 @@
   </a></header>
 <nav class="nav-main"></nav>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-04-site-search" aria-expanded="false">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-04-site-search" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-header-04-site-search" role="note">
     <pre><code class="language-markup">&lt;header&gt;
-	&lt;form class&#x3D;&quot;form-horizontal form-search pull-right&quot; role&#x3D;&quot;form&quot;&gt;
+	&lt;form class&#x3D;&quot;form-horizontal form-search pull-right&quot;&gt;
 		&lt;h2 class&#x3D;&quot;sr-only&quot;&gt;Search&lt;/h2&gt;
 		&lt;label for&#x3D;&quot;search-field&quot; class&#x3D;&quot;sr-only&quot;&gt;Search:&lt;/label&gt;
 		&lt;input id&#x3D;&quot;search-field&quot; class&#x3D;&quot;form-control search-field&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Search&quot;&gt;
@@ -1181,7 +1183,7 @@ var searchData &#x3D; [&quot;Aargau&quot;, &quot;Appenzell A. Rh.&quot;, &quot;A
   </a></header>
 <nav class="nav-main"></nav>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-05-language-selector" aria-expanded="false">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-05-language-selector" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-header-05-language-selector" role="note">
@@ -1360,7 +1362,7 @@ Die Unterteilung eines Themen A-Z in Bereiche, die über eine Reiternavigation e
 </header>
 <nav class="nav-main"></nav>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-06-topics" aria-expanded="false">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-06-topics" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-header-06-topics" role="note">
@@ -1573,7 +1575,7 @@ Die Unterteilung eines Themen A-Z in Bereiche, die über eine Reiternavigation e
   </a></header>
 <nav class="nav-main"></nav>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-07-treecrumb" aria-expanded="false">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-07-treecrumb" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-header-07-treecrumb" role="note">
@@ -1659,14 +1661,14 @@ Die Unterteilung eines Themen A-Z in Bereiche, die über eine Reiternavigation e
           <img class="visible-xs" src="../img/logo-CH.svg" onerror="this.onerror=null; this.src='../img/logo-CH.png'" alt="back to home">
         </div>
       
-        <address>
+        <div class="footer-address">
           <span class="hidden-xs">©2015 Bundeskanzlei</span>
           <nav class="pull-right">
             <ul>
               <li><a href="http://www.disclaimer.admin.ch/terms_and_conditions.html">Rechtliches</a></li>
             </ul>
           </nav>
-        </address>
+        </div>
       </footer>
     </div>
 

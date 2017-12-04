@@ -1,9 +1,9 @@
 <!doctype html>
-<!--[if lt IE 7 ]> <html lang="de" class="no-js ie6 oldie"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="de" class="no-js ie7 oldie"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="de" class="no-js ie8 oldie"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="de" class="no-js ie9"> <![endif]-->
-<!--[if gt IE 9 ]><!--><html lang="de" class="no-js no-ie"><!--<![endif]-->
+<!--[if lt IE 7 ]> <html lang="de" class="no-js ie6 oldie" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="de" class="no-js ie7 oldie" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="de" class="no-js ie8 oldie" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="de" class="no-js ie9" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if gt IE 9 ]><!--><html lang="de" class="no-js no-ie" itemscope itemtype="http://schema.org/WebPage"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -91,11 +91,13 @@
           </a>
           <div class="mod mod-searchfield global-search global-search-standard">
             <!-- begin: sitesearch desktop-->
-            <form class="form-horizontal form-search pull-right" role="form">
+            <form class="form-horizontal form-search pull-right">
               <h2 class="sr-only">Suche</h2>
               <label for="webguiedelines-search-standard" class="sr-only">Suche</label>
               <input id="webguiedelines-search-standard" class="form-control search-input" type="text" placeholder="Suche"/>
-              <span class="icon icon--close search-reset"></span>
+              <span class="icon icon--close search-reset">
+                <span class="sr-only">Zurücksetzen</span>
+              </span>
               <div class="search-results">
                 <div class="search-results-list"></div>
               </div>
@@ -212,7 +214,7 @@
               <div class="dropdown-menu" role="menu">
       
                 <div class="mod mod-searchfield global-search global-search-mobile">
-                  <form class="form" role="form">
+                  <form class="form">
                     <h2 class="sr-only">Suche</h2>
                     <label for="webguiedelines-search-mobile" class="sr-only">Suche</label>
                     <input id="webguiedelines-search-mobile" class="search-input form-control" type="text" placeholder="Suche">
@@ -914,7 +916,7 @@ Es ist möglich, weitere Flyout-Typen zu entwickeln und einzusetzen. Das EDA hat
 			<div class="table-cell dropdown">
 				<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown"><span class="icon icon--search"></span></a>
 				<div class="dropdown-menu" role="menu">
-					<form class="form" role="form">
+					<form class="form">
 						<h2 class="sr-only">Search</h2>
 						<label for="search-field" class="sr-only">Search:</label>
 						<input class="form-control" type="text" placeholder="Search">
@@ -1021,7 +1023,7 @@ Es ist möglich, weitere Flyout-Typen zu entwickeln und einzusetzen. Das EDA hat
 	</ul>
 </nav>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-01-global-navigation" aria-expanded="false">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-01-global-navigation" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-01-hierarchical-navigation-01-global-navigation" role="note">
@@ -1069,7 +1071,7 @@ Es ist möglich, weitere Flyout-Typen zu entwickeln und einzusetzen. Das EDA hat
 			&lt;div class&#x3D;&quot;table-cell dropdown&quot;&gt;
 				&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-mobile-menu dropdown-toggle&quot; data-toggle&#x3D;&quot;dropdown&quot;&gt;&lt;span class&#x3D;&quot;icon icon--search&quot;&gt;&lt;/span&gt;&lt;/a&gt;
 				&lt;div class&#x3D;&quot;dropdown-menu&quot; role&#x3D;&quot;menu&quot;&gt;
-					&lt;form class&#x3D;&quot;form&quot; role&#x3D;&quot;form&quot;&gt;
+					&lt;form class&#x3D;&quot;form&quot;&gt;
 						&lt;h2 class&#x3D;&quot;sr-only&quot;&gt;Search&lt;/h2&gt;
 						&lt;label for&#x3D;&quot;search-field&quot; class&#x3D;&quot;sr-only&quot;&gt;Search:&lt;/label&gt;
 						&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Search&quot;&gt;
@@ -1203,29 +1205,29 @@ Es ist möglich, weitere Flyout-Typen zu entwickeln und einzusetzen. Das EDA hat
   <div class="component-example">
     <div class="clearfix">
       <h2 id="br1" class="hidden">Breadcrumbs</h2>
-<ol class="breadcrumb" role="navigation" aria-labelledby="br1">
+<ol class="breadcrumb" role="menu" aria-labelledby="br1">
 	<li><a href="#">Home page EDA</a><span class="icon icon--greater"></span></li>
 	<li><a href="#">Country & Travel Information</a><span class="icon icon--greater"></span></li>
 	<li><a href="#">Country Selection</a><span class="icon icon--greater"></span></li>
 	<li><a href="#">Democratic Republic of the Congo</a><span class="icon icon--greater"></span></li>
 	<li><a href="#">Some text to create a line break</a><span class="icon icon--greater"></span></li>
 	<li><a href="#">Bilateral Relations</a><span class="icon icon--greater"></span></li>
-	<li class="active" aria-selected="true" aria-label="current page">Title of the active page</li>
+	<li class="active" aria-selected="true" role="presentation">Title of the active page</li>
 </ol>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-02-breadcrumb" aria-expanded="false">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-02-breadcrumb" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-01-hierarchical-navigation-02-breadcrumb" role="note">
     <pre><code class="language-markup">&lt;h2 id&#x3D;&quot;br1&quot; class&#x3D;&quot;hidden&quot;&gt;Breadcrumbs&lt;/h2&gt;
-&lt;ol class&#x3D;&quot;breadcrumb&quot; role&#x3D;&quot;navigation&quot; aria-labelledby&#x3D;&quot;br1&quot;&gt;
+&lt;ol class&#x3D;&quot;breadcrumb&quot; role&#x3D;&quot;menu&quot; aria-labelledby&#x3D;&quot;br1&quot;&gt;
 	&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Home page EDA&lt;/a&gt;&lt;span class&#x3D;&quot;icon icon--greater&quot;&gt;&lt;/span&gt;&lt;/li&gt;
 	&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Country &amp; Travel Information&lt;/a&gt;&lt;span class&#x3D;&quot;icon icon--greater&quot;&gt;&lt;/span&gt;&lt;/li&gt;
 	&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Country Selection&lt;/a&gt;&lt;span class&#x3D;&quot;icon icon--greater&quot;&gt;&lt;/span&gt;&lt;/li&gt;
 	&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Democratic Republic of the Congo&lt;/a&gt;&lt;span class&#x3D;&quot;icon icon--greater&quot;&gt;&lt;/span&gt;&lt;/li&gt;
 	&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Some text to create a line break&lt;/a&gt;&lt;span class&#x3D;&quot;icon icon--greater&quot;&gt;&lt;/span&gt;&lt;/li&gt;
 	&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Bilateral Relations&lt;/a&gt;&lt;span class&#x3D;&quot;icon icon--greater&quot;&gt;&lt;/span&gt;&lt;/li&gt;
-	&lt;li class&#x3D;&quot;active&quot; aria-selected&#x3D;&quot;true&quot; aria-label&#x3D;&quot;current page&quot;&gt;Title of the active page&lt;/li&gt;
+	&lt;li class&#x3D;&quot;active&quot; aria-selected&#x3D;&quot;true&quot; role&#x3D;&quot;presentation&quot;&gt;Title of the active page&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
   </div>
 
@@ -1254,7 +1256,7 @@ Es ist möglich, weitere Flyout-Typen zu entwickeln und einzusetzen. Das EDA hat
     <div class="clearfix">
       <a href="#" class="icon icon--before icon--less hidden-print">Back to Overview</a>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-03-back-to-overview" aria-expanded="false">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-03-back-to-overview" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-01-hierarchical-navigation-03-back-to-overview" role="note">
@@ -1332,7 +1334,7 @@ Wird eine Seite der untersten Navigationsebene angeklickt (d.h. die angeklickte 
 		<div class="col-sm-4 drilldown">
 			<div class="drilldown-container">
 
-				<nav class="nav-page-list" role="navigation" id="secondary-navigation">
+				<nav class="nav-page-list" id="secondary-navigation">
 					<a href="#" class="icon icon--before icon--less visible-xs">Back to parent</a>
 					<a href="#" class="icon icon--before icon--less"><span class="sr-only">Back to </span>Comestible Goods</a>
 					<ul>
@@ -1365,7 +1367,7 @@ Wird eine Seite der untersten Navigationsebene angeklickt (d.h. die angeklickte 
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-04-page-navigation-list" aria-expanded="false">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-04-page-navigation-list" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-01-hierarchical-navigation-04-page-navigation-list" role="note">
@@ -1376,7 +1378,7 @@ Wird eine Seite der untersten Navigationsebene angeklickt (d.h. die angeklickte 
 		&lt;div class&#x3D;&quot;col-sm-4 drilldown&quot;&gt;
 			&lt;div class&#x3D;&quot;drilldown-container&quot;&gt;
 
-				&lt;nav class&#x3D;&quot;nav-page-list&quot; role&#x3D;&quot;navigation&quot; id&#x3D;&quot;secondary-navigation&quot;&gt;
+				&lt;nav class&#x3D;&quot;nav-page-list&quot; id&#x3D;&quot;secondary-navigation&quot;&gt;
 					&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;icon icon--before icon--less visible-xs&quot;&gt;Back to parent&lt;/a&gt;
 					&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;icon icon--before icon--less&quot;&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Back to &lt;/span&gt;Comestible Goods&lt;/a&gt;
 					&lt;ul&gt;
@@ -1504,7 +1506,7 @@ Wird eine Seite der untersten Navigationsebene angeklickt (d.h. die angeklickte 
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-05-faceted-page-navigation" aria-expanded="false">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-05-faceted-page-navigation" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-01-hierarchical-navigation-05-faceted-page-navigation" role="note">
@@ -1594,14 +1596,14 @@ Wird eine Seite der untersten Navigationsebene angeklickt (d.h. die angeklickte 
           <img class="visible-xs" src="../img/logo-CH.svg" onerror="this.onerror=null; this.src='../img/logo-CH.png'" alt="back to home">
         </div>
       
-        <address>
+        <div class="footer-address">
           <span class="hidden-xs">©2015 Bundeskanzlei</span>
           <nav class="pull-right">
             <ul>
               <li><a href="http://www.disclaimer.admin.ch/terms_and_conditions.html">Rechtliches</a></li>
             </ul>
           </nav>
-        </address>
+        </div>
       </footer>
     </div>
 
