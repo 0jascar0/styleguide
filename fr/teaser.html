@@ -93,10 +93,13 @@
             <!-- begin: sitesearch desktop-->
             <form class="form-horizontal form-search pull-right">
               <h2 class="sr-only">Chercher</h2>
-              <label for="webguiedelines-search-standard" class="sr-only">Chercher</label>
-              <input id="webguiedelines-search-standard" class="form-control search-input" type="text" placeholder="Chercher"/>
-              <span class="icon icon--close search-reset">
+              <label for="webguidelines-search-standard" class="sr-only">Chercher</label>
+              <input id="webguidelines-search-standard" class="form-control search-input" type="text" placeholder="Chercher"/>
+              <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
                 <span class="sr-only">Rétablir</span>
+              </button>
+              <span class="icon icon--search">
+                <span class="sr-only">Chercher</span>
               </span>
               <div class="search-results">
                 <div class="search-results-list"></div>
@@ -106,7 +109,7 @@
           </div>
         </div>
       </header>
-      <nav class="nav-main yamm navbar" id="main-navigation">
+      <div class="nav-main yamm navbar" id="main-navigation">
         <h2 class="sr-only">Navigation</h2>
         <!-- The mobile navigation -->
         <section class="nav-mobile">
@@ -212,13 +215,17 @@
                 <span class="icon icon--search"></span>
               </a>
               <div class="dropdown-menu" role="menu">
-      
                 <div class="mod mod-searchfield global-search global-search-mobile">
                   <form class="form">
                     <h2 class="sr-only">Chercher</h2>
-                    <label for="webguiedelines-search-mobile" class="sr-only">Chercher</label>
-                    <input id="webguiedelines-search-mobile" class="search-input form-control" type="text" placeholder="Chercher">
-                    <span class="icon icon--search"></span>
+                    <label for="webguidelines-search-mobile" class="sr-only">Chercher</label>
+                    <input id="webguidelines-search-mobile" class="search-input form-control" type="text" placeholder="Chercher">
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
+                      <span class="sr-only">Rétablir</span>
+                    </button>
+                    <span class="icon icon--search">
+                      <span class="sr-only">Chercher</span>
+                    </span>
                     <div class="search-results">
                       <div class="search-results-list"></div>
                     </div>
@@ -817,7 +824,7 @@
             </div>
           </li>
         </ul>
-      </nav>
+      </div>
       <div class="row">
         <div class="col-xs-12">
           <div id="content" class="container-fluid">
@@ -837,18 +844,15 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-05-teaser-01-focus" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-05-teaser-01-focus" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-05-teaser-01-focus" aria-expanded="false" role="note">
     <div class="alert alert-info">
-      <p><strong>3.3.0</strong></p>
+      <p><strong>3.2.0</strong></p>
 <ul>
 <li>Amélioration de l’accessibilité en déplaçant les tabs avant le contenu sans changer la présentation visuelle</li>
+<li>Ajout d'un attribut <code>aria-label</code> sur les bouttons de nagivation du carousel de remplacement en mode mobile</li>
 </ul>
 <p><strong>3.0.0</strong>
 – Amélioration de l’accessibilité en mettant le diaporama en pause lorsque l’utilisateur interagit avec le composant et aussi en ajoutant un bouton de lecture/pause.</p>
-<p><strong>3.3.0</strong></p>
-<ul>
-<li>Ajout d'<code>aria-label</code> sur les bouttons de nagivation du carousel de remplacement en mode mobile</li>
-</ul>
 
     </div>
   </div>
@@ -926,7 +930,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-01-focus" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-01-focus" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-05-teaser-01-focus" role="note">
@@ -1011,9 +1015,14 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-05-teaser-02-focus-vertical" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-05-teaser-02-focus-vertical" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-05-teaser-02-focus-vertical" aria-expanded="false" role="note">
     <div class="alert alert-info">
-      <p><strong>3.1.0</strong></p>
+      <p><strong>3.2.0</strong></p>
+<ul>
+<li>Amélioration de l’accessibilité en déplaçant les tabs avant le contenu sans changer la présentation visuelle</li>
+<li>Ajout d'un attribut <code>aria-label</code> sur les bouttons de nagivation du carousel de remplacement en mode mobile</li>
+</ul>
+<p><strong>3.1.0</strong></p>
 <ul>
 <li>Ajout le teaser «à la une» vertical</li>
 </ul>
@@ -1092,7 +1101,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-02-focus-vertical" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-02-focus-vertical" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-05-teaser-02-focus-vertical" role="note">
@@ -1198,7 +1207,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-03-news" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-03-news" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-05-teaser-03-news" role="note">
@@ -1292,7 +1301,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-04-headline" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-04-headline" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-05-teaser-04-headline" role="note">
@@ -1365,7 +1374,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-05-teaser-05-carousel" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-05-teaser-05-carousel" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-05-teaser-05-carousel" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong>
 – Les commandes du carrousel ont été déplacées plus haut dans le DOM pour être plus facilement accessible avec le clavier.</p>
@@ -1410,7 +1419,7 @@
 				<div class="item active">
 					<h3>Entwicklungspolitik 1</h3>
 					<p>
-						<img class="carousel-img" src="http://placehold.it/588x331">
+						<img class="carousel-img" src="http://placehold.it/588x331" alt="image description">
 					</p>
 					<div class="spacer"></div>
 					<h4><a href="#">Strassenbau in Nepal 1: ein Weg aus der Armut</a></h4>
@@ -1460,7 +1469,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-05-carousel" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-05-carousel" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-05-teaser-05-carousel" role="note">
@@ -1489,7 +1498,7 @@
 				&lt;div class&#x3D;&quot;item active&quot;&gt;
 					&lt;h3&gt;Entwicklungspolitik 1&lt;/h3&gt;
 					&lt;p&gt;
-						&lt;img class&#x3D;&quot;carousel-img&quot; src&#x3D;&quot;http://placehold.it/588x331&quot;&gt;
+						&lt;img class&#x3D;&quot;carousel-img&quot; src&#x3D;&quot;http://placehold.it/588x331&quot; alt&#x3D;&quot;image description&quot;&gt;
 					&lt;/p&gt;
 					&lt;div class&#x3D;&quot;spacer&quot;&gt;&lt;/div&gt;
 					&lt;h4&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Strassenbau in Nepal 1: ein Weg aus der Armut&lt;/a&gt;&lt;/h4&gt;
@@ -1558,7 +1567,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-05-teaser-06-slideshow" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-05-teaser-06-slideshow" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-05-teaser-06-slideshow" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>2.5.3:</strong></p>
 <ul>
@@ -1615,7 +1624,7 @@
 	<!-- The container for the modal slides -->
 	<div class="slides"></div>
 	<!-- Controls for the borderless lightbox -->
-	<h3 class="title"></h3>
+	<h3 class="title">Title</h3>
 	<a class="prev">‹</a>
 	<a class="next">›</a>
 	<a class="close">×</a>
@@ -1627,7 +1636,7 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" aria-hidden="true">&times;</button>
-					<h4 class="modal-title"></h4>
+					<h4 class="modal-title">Title</h4>
 				</div>
 				<div class="modal-body next"></div>
 				<div class="modal-footer">
@@ -1645,7 +1654,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-06-slideshow" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-06-slideshow" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-05-teaser-06-slideshow" role="note">
@@ -1687,7 +1696,7 @@
 	&lt;!-- The container for the modal slides --&gt;
 	&lt;div class&#x3D;&quot;slides&quot;&gt;&lt;/div&gt;
 	&lt;!-- Controls for the borderless lightbox --&gt;
-	&lt;h3 class&#x3D;&quot;title&quot;&gt;&lt;/h3&gt;
+	&lt;h3 class&#x3D;&quot;title&quot;&gt;Title&lt;/h3&gt;
 	&lt;a class&#x3D;&quot;prev&quot;&gt;‹&lt;/a&gt;
 	&lt;a class&#x3D;&quot;next&quot;&gt;›&lt;/a&gt;
 	&lt;a class&#x3D;&quot;close&quot;&gt;×&lt;/a&gt;
@@ -1699,7 +1708,7 @@
 			&lt;div class&#x3D;&quot;modal-content&quot;&gt;
 				&lt;div class&#x3D;&quot;modal-header&quot;&gt;
 					&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/button&gt;
-					&lt;h4 class&#x3D;&quot;modal-title&quot;&gt;&lt;/h4&gt;
+					&lt;h4 class&#x3D;&quot;modal-title&quot;&gt;Title&lt;/h4&gt;
 				&lt;/div&gt;
 				&lt;div class&#x3D;&quot;modal-body next&quot;&gt;&lt;/div&gt;
 				&lt;div class&#x3D;&quot;modal-footer&quot;&gt;
@@ -1751,7 +1760,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-07-text-teaser" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-07-text-teaser" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-05-teaser-07-text-teaser" role="note">
@@ -1802,7 +1811,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-08-dossier-teaser" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-08-dossier-teaser" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-05-teaser-08-dossier-teaser" role="note">
@@ -1835,7 +1844,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-05-teaser-09-person-teaser" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-05-teaser-09-person-teaser" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-05-teaser-09-person-teaser" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>2.1.1:</strong></p>
 <ul>
@@ -1872,7 +1881,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-09-person-teaser" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-09-person-teaser" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-05-teaser-09-person-teaser" role="note">
@@ -1970,7 +1979,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-10-publications-preview" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-10-publications-preview" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-05-teaser-10-publications-preview" role="note">
@@ -2042,7 +2051,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-05-teaser-11-news-feed" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-05-teaser-11-news-feed" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-05-teaser-11-news-feed" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.1:</strong></p>
 <ul>
@@ -2117,7 +2126,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-11-news-feed" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-11-news-feed" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-05-teaser-11-news-feed" role="note">
@@ -2218,7 +2227,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-12-rss-feed" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-12-rss-feed" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-05-teaser-12-rss-feed" role="note">
@@ -2258,7 +2267,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-05-teaser-12-twitter-timeline" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-05-teaser-12-twitter-timeline" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-05-teaser-12-twitter-timeline" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.1:</strong></p>
 <ul>
@@ -2322,7 +2331,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-12-twitter-timeline" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-05-teaser-12-twitter-timeline" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-05-teaser-12-twitter-timeline" role="note">

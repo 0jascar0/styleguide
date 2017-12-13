@@ -93,10 +93,13 @@
             <!-- begin: sitesearch desktop-->
             <form class="form-horizontal form-search pull-right">
               <h2 class="sr-only">Chercher</h2>
-              <label for="webguiedelines-search-standard" class="sr-only">Chercher</label>
-              <input id="webguiedelines-search-standard" class="form-control search-input" type="text" placeholder="Chercher"/>
-              <span class="icon icon--close search-reset">
+              <label for="webguidelines-search-standard" class="sr-only">Chercher</label>
+              <input id="webguidelines-search-standard" class="form-control search-input" type="text" placeholder="Chercher"/>
+              <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
                 <span class="sr-only">Rétablir</span>
+              </button>
+              <span class="icon icon--search">
+                <span class="sr-only">Chercher</span>
               </span>
               <div class="search-results">
                 <div class="search-results-list"></div>
@@ -106,7 +109,7 @@
           </div>
         </div>
       </header>
-      <nav class="nav-main yamm navbar" id="main-navigation">
+      <div class="nav-main yamm navbar" id="main-navigation">
         <h2 class="sr-only">Navigation</h2>
         <!-- The mobile navigation -->
         <section class="nav-mobile">
@@ -212,13 +215,17 @@
                 <span class="icon icon--search"></span>
               </a>
               <div class="dropdown-menu" role="menu">
-      
                 <div class="mod mod-searchfield global-search global-search-mobile">
                   <form class="form">
                     <h2 class="sr-only">Chercher</h2>
-                    <label for="webguiedelines-search-mobile" class="sr-only">Chercher</label>
-                    <input id="webguiedelines-search-mobile" class="search-input form-control" type="text" placeholder="Chercher">
-                    <span class="icon icon--search"></span>
+                    <label for="webguidelines-search-mobile" class="sr-only">Chercher</label>
+                    <input id="webguidelines-search-mobile" class="search-input form-control" type="text" placeholder="Chercher">
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
+                      <span class="sr-only">Rétablir</span>
+                    </button>
+                    <span class="icon icon--search">
+                      <span class="sr-only">Chercher</span>
+                    </span>
                     <div class="search-results">
                       <div class="search-results-list"></div>
                     </div>
@@ -817,7 +824,7 @@
             </div>
           </li>
         </ul>
-      </nav>
+      </div>
       <div class="row">
         <div class="col-xs-12">
           <div id="content" class="container-fluid">
@@ -837,7 +844,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-01-hierarchical-navigation-01-global-navigation" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-01-hierarchical-navigation-01-global-navigation" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-01-hierarchical-navigation-01-global-navigation" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>2.1.2:</strong></p>
 <ul>
@@ -872,7 +879,7 @@ Il est possible de développer et d’utiliser d’autres types de flyouts. Le D
 
   <div class="component-example">
     <div class="clearfix">
-      <nav class="nav-main yamm navbar" id="main-navigation">
+      <nav class="nav-main yamm navbar" id="main-navigation-example">
 	<h2 class="sr-only">Navigation</h2>
 	<section class="nav-mobile">
 		<div class="table-row">
@@ -919,7 +926,7 @@ Il est possible de développer et d’utiliser d’autres types de flyouts. Le D
 					<form class="form">
 						<h2 class="sr-only">Search</h2>
 						<label for="search-field" class="sr-only">Search:</label>
-						<input class="form-control" type="text" placeholder="Search">
+						<input id="search-field" class="form-control" type="text" placeholder="Search">
 						<span class="icon icon--search"></span>
 					</form>
 				</div>
@@ -1023,11 +1030,11 @@ Il est possible de développer et d’utiliser d’autres types de flyouts. Le D
 	</ul>
 </nav>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-01-global-navigation" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-01-global-navigation" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-01-hierarchical-navigation-01-global-navigation" role="note">
-    <pre><code class="language-markup">&lt;nav class&#x3D;&quot;nav-main yamm navbar&quot; id&#x3D;&quot;main-navigation&quot;&gt;
+    <pre><code class="language-markup">&lt;nav class&#x3D;&quot;nav-main yamm navbar&quot; id&#x3D;&quot;main-navigation-example&quot;&gt;
 	&lt;h2 class&#x3D;&quot;sr-only&quot;&gt;Navigation&lt;/h2&gt;
 	&lt;section class&#x3D;&quot;nav-mobile&quot;&gt;
 		&lt;div class&#x3D;&quot;table-row&quot;&gt;
@@ -1074,7 +1081,7 @@ Il est possible de développer et d’utiliser d’autres types de flyouts. Le D
 					&lt;form class&#x3D;&quot;form&quot;&gt;
 						&lt;h2 class&#x3D;&quot;sr-only&quot;&gt;Search&lt;/h2&gt;
 						&lt;label for&#x3D;&quot;search-field&quot; class&#x3D;&quot;sr-only&quot;&gt;Search:&lt;/label&gt;
-						&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Search&quot;&gt;
+						&lt;input id&#x3D;&quot;search-field&quot; class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Search&quot;&gt;
 						&lt;span class&#x3D;&quot;icon icon--search&quot;&gt;&lt;/span&gt;
 					&lt;/form&gt;
 				&lt;/div&gt;
@@ -1215,7 +1222,7 @@ Il est possible de développer et d’utiliser d’autres types de flyouts. Le D
 	<li class="active" role="presentation">Title of the active page</li>
 </ol>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-02-breadcrumb" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-02-breadcrumb" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-01-hierarchical-navigation-02-breadcrumb" role="note">
@@ -1256,7 +1263,7 @@ Il est possible de développer et d’utiliser d’autres types de flyouts. Le D
     <div class="clearfix">
       <a href="#" class="icon icon--before icon--less hidden-print">Back to Overview</a>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-03-back-to-overview" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-03-back-to-overview" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-01-hierarchical-navigation-03-back-to-overview" role="note">
@@ -1280,7 +1287,7 @@ Il est possible de développer et d’utiliser d’autres types de flyouts. Le D
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-01-hierarchical-navigation-04-page-navigation-list" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-01-hierarchical-navigation-04-page-navigation-list" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-01-hierarchical-navigation-04-page-navigation-list" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>2.5.2:</strong></p>
 <ul>
@@ -1351,7 +1358,7 @@ Si l’on souhaite sélectionner une page (page sœur) qui se situe sur le même
 										</ul>
 									</nav>
 								</li>
-								<li class="active" aria-selected="true">Wine<span class="sr-only"> active</span></li>
+								<li class="active">Wine<span class="sr-only"> active</span></li>
 								<li><a href="#">Beer</a></li>
 								<li><a href="#">Spirits</a></li>
 							</ul>
@@ -1365,7 +1372,7 @@ Si l’on souhaite sélectionner une page (page sœur) qui se situe sur le même
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-04-page-navigation-list" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-04-page-navigation-list" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-01-hierarchical-navigation-04-page-navigation-list" role="note">
@@ -1395,7 +1402,7 @@ Si l’on souhaite sélectionner une page (page sœur) qui se situe sur le même
 										&lt;/ul&gt;
 									&lt;/nav&gt;
 								&lt;/li&gt;
-								&lt;li class&#x3D;&quot;active&quot; aria-selected&#x3D;&quot;true&quot;&gt;Wine&lt;span class&#x3D;&quot;sr-only&quot;&gt; active&lt;/span&gt;&lt;/li&gt;
+								&lt;li class&#x3D;&quot;active&quot;&gt;Wine&lt;span class&#x3D;&quot;sr-only&quot;&gt; active&lt;/span&gt;&lt;/li&gt;
 								&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Beer&lt;/a&gt;&lt;/li&gt;
 								&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Spirits&lt;/a&gt;&lt;/li&gt;
 							&lt;/ul&gt;
@@ -1427,7 +1434,7 @@ Si l’on souhaite sélectionner une page (page sœur) qui se situe sur le même
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-01-hierarchical-navigation-05-faceted-page-navigation" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-01-hierarchical-navigation-05-faceted-page-navigation" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-01-hierarchical-navigation-05-faceted-page-navigation" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>2.0.0:</strong></p>
 <ul>
@@ -1456,14 +1463,15 @@ Si l’on souhaite sélectionner une page (page sœur) qui se situe sur le même
 			<nav class="nav-page-list nav-page-list--facette">
 				<a href="#" class="icon icon--before icon--less">Home page swisstopo</a>
 				<ul>
-					<button class="icon icon--before icon--root active" id="geodata-collapse" data-toggle="collapse" data-target="#geodata">Geodata</button>
-					<ul id="geodata" class="collapse in">
-						<li><a href="#">Images</a> <span class="badge">1285</span></li>
-						<li><a href="#">Landscape models</a> <span class="badge">245</span></li>
-						<li class="active">Elevation models <span class="badge">45</span></li>
-						<li><a href="#">Map data</a> <span class="badge">27</span></li>
-						<li><a href="#">Geological models</a> <span class="badge">238</span></li>
-					</ul>
+					<li>
+						<button class="icon icon--before icon--root active" id="geodata-collapse" data-toggle="collapse" data-target="#geodata">Geodata</button>
+						<ul id="geodata" class="collapse in">
+							<li><a href="#">Images</a> <span class="badge">1285</span></li>
+							<li><a href="#">Landscape models</a> <span class="badge">245</span></li>
+							<li class="active">Elevation models <span class="badge">45</span></li>
+							<li><a href="#">Map data</a> <span class="badge">27</span></li>
+							<li><a href="#">Geological models</a> <span class="badge">238</span></li>
+						</ul>
 					</li>
 					<li>
 						<button class="icon icon--before icon--greater" data-toggle="collapse" data-target="#content-1">Use</button>
@@ -1504,7 +1512,7 @@ Si l’on souhaite sélectionner une page (page sœur) qui se situe sur le même
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-05-faceted-page-navigation" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-01-hierarchical-navigation-05-faceted-page-navigation" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-01-hierarchical-navigation-05-faceted-page-navigation" role="note">
@@ -1515,14 +1523,15 @@ Si l’on souhaite sélectionner une page (page sœur) qui se situe sur le même
 			&lt;nav class&#x3D;&quot;nav-page-list nav-page-list--facette&quot;&gt;
 				&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;icon icon--before icon--less&quot;&gt;Home page swisstopo&lt;/a&gt;
 				&lt;ul&gt;
-					&lt;button class&#x3D;&quot;icon icon--before icon--root active&quot; id&#x3D;&quot;geodata-collapse&quot; data-toggle&#x3D;&quot;collapse&quot; data-target&#x3D;&quot;#geodata&quot;&gt;Geodata&lt;/button&gt;
-					&lt;ul id&#x3D;&quot;geodata&quot; class&#x3D;&quot;collapse in&quot;&gt;
-						&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Images&lt;/a&gt; &lt;span class&#x3D;&quot;badge&quot;&gt;1285&lt;/span&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Landscape models&lt;/a&gt; &lt;span class&#x3D;&quot;badge&quot;&gt;245&lt;/span&gt;&lt;/li&gt;
-						&lt;li class&#x3D;&quot;active&quot;&gt;Elevation models &lt;span class&#x3D;&quot;badge&quot;&gt;45&lt;/span&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Map data&lt;/a&gt; &lt;span class&#x3D;&quot;badge&quot;&gt;27&lt;/span&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Geological models&lt;/a&gt; &lt;span class&#x3D;&quot;badge&quot;&gt;238&lt;/span&gt;&lt;/li&gt;
-					&lt;/ul&gt;
+					&lt;li&gt;
+						&lt;button class&#x3D;&quot;icon icon--before icon--root active&quot; id&#x3D;&quot;geodata-collapse&quot; data-toggle&#x3D;&quot;collapse&quot; data-target&#x3D;&quot;#geodata&quot;&gt;Geodata&lt;/button&gt;
+						&lt;ul id&#x3D;&quot;geodata&quot; class&#x3D;&quot;collapse in&quot;&gt;
+							&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Images&lt;/a&gt; &lt;span class&#x3D;&quot;badge&quot;&gt;1285&lt;/span&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Landscape models&lt;/a&gt; &lt;span class&#x3D;&quot;badge&quot;&gt;245&lt;/span&gt;&lt;/li&gt;
+							&lt;li class&#x3D;&quot;active&quot;&gt;Elevation models &lt;span class&#x3D;&quot;badge&quot;&gt;45&lt;/span&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Map data&lt;/a&gt; &lt;span class&#x3D;&quot;badge&quot;&gt;27&lt;/span&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Geological models&lt;/a&gt; &lt;span class&#x3D;&quot;badge&quot;&gt;238&lt;/span&gt;&lt;/li&gt;
+						&lt;/ul&gt;
 					&lt;/li&gt;
 					&lt;li&gt;
 						&lt;button class&#x3D;&quot;icon icon--before icon--greater&quot; data-toggle&#x3D;&quot;collapse&quot; data-target&#x3D;&quot;#content-1&quot;&gt;Use&lt;/button&gt;

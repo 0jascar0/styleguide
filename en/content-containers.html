@@ -93,10 +93,13 @@
             <!-- begin: sitesearch desktop-->
             <form class="form-horizontal form-search pull-right">
               <h2 class="sr-only">Search</h2>
-              <label for="webguiedelines-search-standard" class="sr-only">Search</label>
-              <input id="webguiedelines-search-standard" class="form-control search-input" type="text" placeholder="Search"/>
-              <span class="icon icon--close search-reset">
+              <label for="webguidelines-search-standard" class="sr-only">Search</label>
+              <input id="webguidelines-search-standard" class="form-control search-input" type="text" placeholder="Search"/>
+              <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
                 <span class="sr-only">Reset</span>
+              </button>
+              <span class="icon icon--search">
+                <span class="sr-only">Search</span>
               </span>
               <div class="search-results">
                 <div class="search-results-list"></div>
@@ -106,7 +109,7 @@
           </div>
         </div>
       </header>
-      <nav class="nav-main yamm navbar" id="main-navigation">
+      <div class="nav-main yamm navbar" id="main-navigation">
         <h2 class="sr-only">Navigation</h2>
         <!-- The mobile navigation -->
         <section class="nav-mobile">
@@ -212,13 +215,17 @@
                 <span class="icon icon--search"></span>
               </a>
               <div class="dropdown-menu" role="menu">
-      
                 <div class="mod mod-searchfield global-search global-search-mobile">
                   <form class="form">
                     <h2 class="sr-only">Search</h2>
-                    <label for="webguiedelines-search-mobile" class="sr-only">Search</label>
-                    <input id="webguiedelines-search-mobile" class="search-input form-control" type="text" placeholder="Search">
-                    <span class="icon icon--search"></span>
+                    <label for="webguidelines-search-mobile" class="sr-only">Search</label>
+                    <input id="webguidelines-search-mobile" class="search-input form-control" type="text" placeholder="Search">
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
+                      <span class="sr-only">Reset</span>
+                    </button>
+                    <span class="icon icon--search">
+                      <span class="sr-only">Search</span>
+                    </span>
                     <div class="search-results">
                       <div class="search-results-list"></div>
                     </div>
@@ -817,7 +824,7 @@
             </div>
           </li>
         </ul>
-      </nav>
+      </div>
       <div class="row">
         <div class="col-xs-12">
           <div id="content" class="container-fluid">
@@ -926,7 +933,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-content-containers-01-elements-list" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-content-containers-01-elements-list" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-content-containers-01-elements-list" role="note">
@@ -1091,7 +1098,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-content-containers-02-further-information" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-content-containers-02-further-information" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-content-containers-02-further-information" role="note">
@@ -1220,7 +1227,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-content-containers-03-collapsible-panel" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-content-containers-03-collapsible-panel" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-content-containers-03-collapsible-panel" role="note">

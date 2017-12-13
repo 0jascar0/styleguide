@@ -93,10 +93,13 @@
             <!-- begin: sitesearch desktop-->
             <form class="form-horizontal form-search pull-right">
               <h2 class="sr-only">Search</h2>
-              <label for="webguiedelines-search-standard" class="sr-only">Search</label>
-              <input id="webguiedelines-search-standard" class="form-control search-input" type="text" placeholder="Search"/>
-              <span class="icon icon--close search-reset">
+              <label for="webguidelines-search-standard" class="sr-only">Search</label>
+              <input id="webguidelines-search-standard" class="form-control search-input" type="text" placeholder="Search"/>
+              <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
                 <span class="sr-only">Reset</span>
+              </button>
+              <span class="icon icon--search">
+                <span class="sr-only">Search</span>
               </span>
               <div class="search-results">
                 <div class="search-results-list"></div>
@@ -106,7 +109,7 @@
           </div>
         </div>
       </header>
-      <nav class="nav-main yamm navbar" id="main-navigation">
+      <div class="nav-main yamm navbar" id="main-navigation">
         <h2 class="sr-only">Navigation</h2>
         <!-- The mobile navigation -->
         <section class="nav-mobile">
@@ -212,13 +215,17 @@
                 <span class="icon icon--search"></span>
               </a>
               <div class="dropdown-menu" role="menu">
-      
                 <div class="mod mod-searchfield global-search global-search-mobile">
                   <form class="form">
                     <h2 class="sr-only">Search</h2>
-                    <label for="webguiedelines-search-mobile" class="sr-only">Search</label>
-                    <input id="webguiedelines-search-mobile" class="search-input form-control" type="text" placeholder="Search">
-                    <span class="icon icon--search"></span>
+                    <label for="webguidelines-search-mobile" class="sr-only">Search</label>
+                    <input id="webguidelines-search-mobile" class="search-input form-control" type="text" placeholder="Search">
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
+                      <span class="sr-only">Reset</span>
+                    </button>
+                    <span class="icon icon--search">
+                      <span class="sr-only">Search</span>
+                    </span>
                     <div class="search-results">
                       <div class="search-results-list"></div>
                     </div>
@@ -817,7 +824,7 @@
             </div>
           </li>
         </ul>
-      </nav>
+      </div>
       <div class="row">
         <div class="col-xs-12">
           <div id="content" class="container-fluid">
@@ -837,7 +844,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-02-general-01-logo" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-02-general-01-logo" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-02-general-01-logo" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -865,7 +872,7 @@
   <h1>Department of the Environment, Transport, Energy and Communications</h1>
 </a>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-general-01-logo" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-general-01-logo" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-general-01-logo" role="note">
@@ -1031,7 +1038,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-general-03-background" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-general-03-background" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-general-03-background" role="note">
@@ -1085,7 +1092,7 @@
     <div class="clearfix">
       <img src="http://placehold.it/588x368" alt="image description">
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-general-05-standard-image" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-general-05-standard-image" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-general-05-standard-image" role="note">
@@ -1117,7 +1124,7 @@
 	<figcaption>Caption content</figcaption>
 </figure>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-general-06-captioned-image" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-general-06-captioned-image" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-general-06-captioned-image" role="note">
@@ -1147,61 +1154,64 @@
 
 
 
-  <table class="table table-bordered" style="margin-top: 20px;"><thead>
-<tr>
-<th>Example</th>
-<th>Usage</th>
-</tr>
-</thead><tbody>
-<tr>
-<td><img src="http://placehold.it/588x368" alt="image description"></td>
-<td><figcaption>Title + Image (16:10)</figcaption></td>
-</tr>
-<tr>
-<td><img src="http://placehold.it/588x184" alt="image description"></td>
-<td><figcaption>Title + Image 1/2 (16:5)</figcaption></td>
-</tr>
-<tr>
-<td><img src="http://placehold.it/588x331" alt="image description"></td>
-<td><figcaption>Video (16:9)</figcaption></td>
-</tr>
-<tr>
-<td><img src="http://placehold.it/588x368" alt="image description"></td>
-<td><figcaption>Teaser 2/4 (16:10)</figcaption></td>
-</tr>
-<tr>
-<td><img src="http://placehold.it/384x240" alt="image description"></td>
-<td><figcaption>Teaser 1/3 (16:10)</figcaption></td>
-</tr>
-<tr>
-<td><img src="http://placehold.it/282x176" alt="image description"></td>
-<td><figcaption>Teaser 1/4 (16:10)</figcaption></td>
-</tr>
-<tr>
-<td><img src="http://placehold.it/258x161" alt="image description"></td>
-<td><figcaption>Teaser Aside</figcaption></td>
-</tr>
-<tr>
-<td><img src="http://placehold.it/258x387" alt="image description"></td>
-<td><figcaption>Teaser Aside</figcaption></td>
-</tr>
-<tr>
-<td><img src="http://placehold.it/180x113" alt="image description"></td>
-<td><figcaption>Standard image + text / Standard infobox</figcaption></td>
-</tr>
-<tr>
-<td><img src="http://placehold.it/180x270" alt="image description"></td>
-<td><figcaption>Standard image + text / Standard infobox</figcaption></td>
-</tr>
-<tr>
-<td><img src="http://placehold.it/156x98" alt="image description"></td>
-<td><figcaption>Navigation teaser (16:10)</figcaption></td>
-</tr>
-<tr>
-<td><img src="http://placehold.it/78x117" alt="image description"></td>
-<td><figcaption>Teaser list</figcaption></td>
-</tr>
-</tbody></table>
+  <table class="table table-bordered" style="margin-top: 20px;">
+  <thead>
+  <tr>
+    <th>Example</th>
+    <th>Usage</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><img src="http://placehold.it/588x368" alt="image description"></td>
+    <td>Title + Image (16:10)</td>
+  </tr>
+  <tr>
+    <td><img src="http://placehold.it/588x184" alt="image description"></td>
+    <td>Title + Image 1/2 (16:5)</td>
+  </tr>
+  <tr>
+    <td><img src="http://placehold.it/588x331" alt="image description"></td>
+    <td>Video (16:9)</td>
+  </tr>
+  <tr>
+    <td><img src="http://placehold.it/588x368" alt="image description"></td>
+    <td>Teaser 2/4 (16:10)</td>
+  </tr>
+  <tr>
+    <td><img src="http://placehold.it/384x240" alt="image description"></td>
+    <td>Teaser 1/3 (16:10)</td>
+  </tr>
+  <tr>
+    <td><img src="http://placehold.it/282x176" alt="image description"></td>
+    <td>Teaser 1/4 (16:10)</td>
+  </tr>
+  <tr>
+    <td><img src="http://placehold.it/258x161" alt="image description"></td>
+    <td>Teaser Aside</td>
+  </tr>
+  <tr>
+    <td><img src="http://placehold.it/258x387" alt="image description"></td>
+    <td>Teaser Aside</td>
+  </tr>
+  <tr>
+    <td><img src="http://placehold.it/180x113" alt="image description"></td>
+    <td>Standard image + text / Standard infobox</td>
+  </tr>
+  <tr>
+    <td><img src="http://placehold.it/180x270" alt="image description"></td>
+    <td>Standard image + text / Standard infobox</td>
+  </tr>
+  <tr>
+    <td><img src="http://placehold.it/156x98" alt="image description"></td>
+    <td>Navigation teaser (16:10)</td>
+  </tr>
+  <tr>
+    <td><img src="http://placehold.it/78x117" alt="image description"></td>
+    <td>Teaser list</td>
+  </tr>
+  </tbody>
+</table>
 
 
 
@@ -1219,7 +1229,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-02-general-08-icons" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-02-general-08-icons" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-02-general-08-icons" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.1.1</strong></p>
 <ul>
@@ -1245,7 +1255,7 @@
 <!-- inside-icon element -->
 <p><a href="doc.pdf" class="icon icon--before icon--pdf" aria-hidden="true">My document</a></p>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-general-08-icons" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-general-08-icons" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-general-08-icons" role="note">

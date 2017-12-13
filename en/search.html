@@ -93,10 +93,13 @@
             <!-- begin: sitesearch desktop-->
             <form class="form-horizontal form-search pull-right">
               <h2 class="sr-only">Search</h2>
-              <label for="webguiedelines-search-standard" class="sr-only">Search</label>
-              <input id="webguiedelines-search-standard" class="form-control search-input" type="text" placeholder="Search"/>
-              <span class="icon icon--close search-reset">
+              <label for="webguidelines-search-standard" class="sr-only">Search</label>
+              <input id="webguidelines-search-standard" class="form-control search-input" type="text" placeholder="Search"/>
+              <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
                 <span class="sr-only">Reset</span>
+              </button>
+              <span class="icon icon--search">
+                <span class="sr-only">Search</span>
               </span>
               <div class="search-results">
                 <div class="search-results-list"></div>
@@ -106,7 +109,7 @@
           </div>
         </div>
       </header>
-      <nav class="nav-main yamm navbar" id="main-navigation">
+      <div class="nav-main yamm navbar" id="main-navigation">
         <h2 class="sr-only">Navigation</h2>
         <!-- The mobile navigation -->
         <section class="nav-mobile">
@@ -212,13 +215,17 @@
                 <span class="icon icon--search"></span>
               </a>
               <div class="dropdown-menu" role="menu">
-      
                 <div class="mod mod-searchfield global-search global-search-mobile">
                   <form class="form">
                     <h2 class="sr-only">Search</h2>
-                    <label for="webguiedelines-search-mobile" class="sr-only">Search</label>
-                    <input id="webguiedelines-search-mobile" class="search-input form-control" type="text" placeholder="Search">
-                    <span class="icon icon--search"></span>
+                    <label for="webguidelines-search-mobile" class="sr-only">Search</label>
+                    <input id="webguidelines-search-mobile" class="search-input form-control" type="text" placeholder="Search">
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
+                      <span class="sr-only">Reset</span>
+                    </button>
+                    <span class="icon icon--search">
+                      <span class="sr-only">Search</span>
+                    </span>
                     <div class="search-results">
                       <div class="search-results-list"></div>
                     </div>
@@ -817,7 +824,7 @@
             </div>
           </li>
         </ul>
-      </nav>
+      </div>
       <div class="row">
         <div class="col-xs-12">
           <div id="content" class="container-fluid">
@@ -851,7 +858,7 @@
 	</fieldset>
 </form>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-07-search-01-search-box" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-07-search-01-search-box" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-07-search-01-search-box" role="note">
@@ -933,7 +940,9 @@
 				<li><a href="#">Country & Travel Information</a><span class="icon icon--greater"></span></li>
 				<li class="active">Country Selection</li>
 			</ol>
-			<h4><a href="#">Title of the first result</a></h4>
+			<div class="search-result-header">
+				<a href="#">Title of the first result</a>
+			</div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, eum, dolor, alias quo aspernatur quos soluta ducimus nihil aliquid maiores ipsam aut suscipit eos iste dicta ipsum aperiam distinctio illum.</p>
 		</article>
 		<article class="search-result">
@@ -942,7 +951,9 @@
 				<li><a href="#">Country & Travel Information</a><span class="icon icon--greater"></span></li>
 				<li class="active">Country Selection</li>
 			</ol>
-			<h4><a href="#">Title of the second result</a></h4>
+			<div class="search-result-header">
+				<a href="#">Title of the second result</a>
+			</div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, eum, dolor, alias quo aspernatur quos soluta ducimus nihil aliquid maiores ipsam aut suscipit eos iste dicta ipsum aperiam distinctio illum.</p>
 		</article>
 
@@ -1002,7 +1013,9 @@
 		</nav>
 
 		<article class="search-result clearfix">
-			<h4><a href="#">News item</a></h4>
+			<div class="search-result-header">
+				<a href="#">News item</a>
+			</div>
 			<figure class="pull-left">
 				<img src="http://placehold.it/180x113" alt="image description">
 				<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si quicquam extra virtutem habeatur in bonis.</figcaption>
@@ -1011,7 +1024,9 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptate, sint animi reiciendis odio cumque corrupti perspiciatis et minus sit quia doloremque. Perspiciatis, atque veritatis ad iste ducimus libero voluptas.</p>
 		</article>
 		<article class="search-result clearfix">
-			<h4><a href="#">News item</a></h4>
+			<div class="search-result-header">
+				<a href="#">News item</a>
+			</div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptate, sint animi reiciendis odio cumque corrupti perspiciatis et minus sit quia doloremque. Perspiciatis, atque veritatis ad iste ducimus libero voluptas.</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptate, sint animi reiciendis odio cumque corrupti perspiciatis et minus sit quia doloremque. Perspiciatis, atque veritatis ad iste ducimus libero voluptas.</p>
 		</article>
@@ -1064,7 +1079,9 @@
 		</div>
 
 		<article class="search-result clearfix">
-			<h4><a href="#">Document</a></h4>
+			<div class="search-result-header">
+				<a href="#">Document</a>
+			</div>
 			<figure class="pull-left">
 				<img src="http://placehold.it/78x117" alt="image description">
 			</figure>
@@ -1078,7 +1095,9 @@
 		</article>
 
 		<article class="search-result clearfix">
-			<h4><a href="#">Image</a></h4>
+			<div class="search-result-header">
+				<a href="#">Image</a>
+			</div>
 			<figure class="pull-left">
 				<img src="http://placehold.it/180x113" alt="image description">
 			</figure>
@@ -1086,7 +1105,9 @@
 		</article>
 
 		<article class="search-result clearfix">
-			<h4><a href="#">Video</a></h4>
+			<div class="search-result-header">
+				<a href="#">Video</a>
+			</div>
 			<iframe src="//player.vimeo.com/video/38388574" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptate, sint animi reiciendis odio cumque corrupti perspiciatis et minus sit quia doloremque. Perspiciatis, atque veritatis ad iste ducimus libero voluptas.</p>
 		</article>
@@ -1098,7 +1119,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-07-search-02-search-results" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-07-search-02-search-results" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-07-search-02-search-results" role="note">
@@ -1148,7 +1169,9 @@
 				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Country &amp; Travel Information&lt;/a&gt;&lt;span class&#x3D;&quot;icon icon--greater&quot;&gt;&lt;/span&gt;&lt;/li&gt;
 				&lt;li class&#x3D;&quot;active&quot;&gt;Country Selection&lt;/li&gt;
 			&lt;/ol&gt;
-			&lt;h4&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Title of the first result&lt;/a&gt;&lt;/h4&gt;
+			&lt;div class&#x3D;&quot;search-result-header&quot;&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;Title of the first result&lt;/a&gt;
+			&lt;/div&gt;
 			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, eum, dolor, alias quo aspernatur quos soluta ducimus nihil aliquid maiores ipsam aut suscipit eos iste dicta ipsum aperiam distinctio illum.&lt;/p&gt;
 		&lt;/article&gt;
 		&lt;article class&#x3D;&quot;search-result&quot;&gt;
@@ -1157,7 +1180,9 @@
 				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Country &amp; Travel Information&lt;/a&gt;&lt;span class&#x3D;&quot;icon icon--greater&quot;&gt;&lt;/span&gt;&lt;/li&gt;
 				&lt;li class&#x3D;&quot;active&quot;&gt;Country Selection&lt;/li&gt;
 			&lt;/ol&gt;
-			&lt;h4&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Title of the second result&lt;/a&gt;&lt;/h4&gt;
+			&lt;div class&#x3D;&quot;search-result-header&quot;&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;Title of the second result&lt;/a&gt;
+			&lt;/div&gt;
 			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, eum, dolor, alias quo aspernatur quos soluta ducimus nihil aliquid maiores ipsam aut suscipit eos iste dicta ipsum aperiam distinctio illum.&lt;/p&gt;
 		&lt;/article&gt;
 
@@ -1217,7 +1242,9 @@
 		&lt;/nav&gt;
 
 		&lt;article class&#x3D;&quot;search-result clearfix&quot;&gt;
-			&lt;h4&gt;&lt;a href&#x3D;&quot;#&quot;&gt;News item&lt;/a&gt;&lt;/h4&gt;
+			&lt;div class&#x3D;&quot;search-result-header&quot;&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;News item&lt;/a&gt;
+			&lt;/div&gt;
 			&lt;figure class&#x3D;&quot;pull-left&quot;&gt;
 				&lt;img src&#x3D;&quot;http://placehold.it/180x113&quot; alt&#x3D;&quot;image description&quot;&gt;
 				&lt;figcaption&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si quicquam extra virtutem habeatur in bonis.&lt;/figcaption&gt;
@@ -1226,7 +1253,9 @@
 			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptate, sint animi reiciendis odio cumque corrupti perspiciatis et minus sit quia doloremque. Perspiciatis, atque veritatis ad iste ducimus libero voluptas.&lt;/p&gt;
 		&lt;/article&gt;
 		&lt;article class&#x3D;&quot;search-result clearfix&quot;&gt;
-			&lt;h4&gt;&lt;a href&#x3D;&quot;#&quot;&gt;News item&lt;/a&gt;&lt;/h4&gt;
+			&lt;div class&#x3D;&quot;search-result-header&quot;&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;News item&lt;/a&gt;
+			&lt;/div&gt;
 			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptate, sint animi reiciendis odio cumque corrupti perspiciatis et minus sit quia doloremque. Perspiciatis, atque veritatis ad iste ducimus libero voluptas.&lt;/p&gt;
 			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptate, sint animi reiciendis odio cumque corrupti perspiciatis et minus sit quia doloremque. Perspiciatis, atque veritatis ad iste ducimus libero voluptas.&lt;/p&gt;
 		&lt;/article&gt;
@@ -1279,7 +1308,9 @@
 		&lt;/div&gt;
 
 		&lt;article class&#x3D;&quot;search-result clearfix&quot;&gt;
-			&lt;h4&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Document&lt;/a&gt;&lt;/h4&gt;
+			&lt;div class&#x3D;&quot;search-result-header&quot;&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;Document&lt;/a&gt;
+			&lt;/div&gt;
 			&lt;figure class&#x3D;&quot;pull-left&quot;&gt;
 				&lt;img src&#x3D;&quot;http://placehold.it/78x117&quot; alt&#x3D;&quot;image description&quot;&gt;
 			&lt;/figure&gt;
@@ -1293,7 +1324,9 @@
 		&lt;/article&gt;
 
 		&lt;article class&#x3D;&quot;search-result clearfix&quot;&gt;
-			&lt;h4&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Image&lt;/a&gt;&lt;/h4&gt;
+			&lt;div class&#x3D;&quot;search-result-header&quot;&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;Image&lt;/a&gt;
+			&lt;/div&gt;
 			&lt;figure class&#x3D;&quot;pull-left&quot;&gt;
 				&lt;img src&#x3D;&quot;http://placehold.it/180x113&quot; alt&#x3D;&quot;image description&quot;&gt;
 			&lt;/figure&gt;
@@ -1301,7 +1334,9 @@
 		&lt;/article&gt;
 
 		&lt;article class&#x3D;&quot;search-result clearfix&quot;&gt;
-			&lt;h4&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Video&lt;/a&gt;&lt;/h4&gt;
+			&lt;div class&#x3D;&quot;search-result-header&quot;&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;Video&lt;/a&gt;
+			&lt;/div&gt;
 			&lt;iframe src&#x3D;&quot;//player.vimeo.com/video/38388574&quot; width&#x3D;&quot;500&quot; height&#x3D;&quot;281&quot; frameborder&#x3D;&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptate, sint animi reiciendis odio cumque corrupti perspiciatis et minus sit quia doloremque. Perspiciatis, atque veritatis ad iste ducimus libero voluptas.&lt;/p&gt;
 		&lt;/article&gt;

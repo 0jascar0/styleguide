@@ -93,10 +93,13 @@
             <!-- begin: sitesearch desktop-->
             <form class="form-horizontal form-search pull-right">
               <h2 class="sr-only">Suche</h2>
-              <label for="webguiedelines-search-standard" class="sr-only">Suche</label>
-              <input id="webguiedelines-search-standard" class="form-control search-input" type="text" placeholder="Suche"/>
-              <span class="icon icon--close search-reset">
+              <label for="webguidelines-search-standard" class="sr-only">Suche</label>
+              <input id="webguidelines-search-standard" class="form-control search-input" type="text" placeholder="Suche"/>
+              <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
                 <span class="sr-only">Zurücksetzen</span>
+              </button>
+              <span class="icon icon--search">
+                <span class="sr-only">Suche</span>
               </span>
               <div class="search-results">
                 <div class="search-results-list"></div>
@@ -106,7 +109,7 @@
           </div>
         </div>
       </header>
-      <nav class="nav-main yamm navbar" id="main-navigation">
+      <div class="nav-main yamm navbar" id="main-navigation">
         <h2 class="sr-only">Navigation</h2>
         <!-- The mobile navigation -->
         <section class="nav-mobile">
@@ -212,13 +215,17 @@
                 <span class="icon icon--search"></span>
               </a>
               <div class="dropdown-menu" role="menu">
-      
                 <div class="mod mod-searchfield global-search global-search-mobile">
                   <form class="form">
                     <h2 class="sr-only">Suche</h2>
-                    <label for="webguiedelines-search-mobile" class="sr-only">Suche</label>
-                    <input id="webguiedelines-search-mobile" class="search-input form-control" type="text" placeholder="Suche">
-                    <span class="icon icon--search"></span>
+                    <label for="webguidelines-search-mobile" class="sr-only">Suche</label>
+                    <input id="webguidelines-search-mobile" class="search-input form-control" type="text" placeholder="Suche">
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
+                      <span class="sr-only">Zurücksetzen</span>
+                    </button>
+                    <span class="icon icon--search">
+                      <span class="sr-only">Suche</span>
+                    </span>
                     <div class="search-results">
                       <div class="search-results-list"></div>
                     </div>
@@ -817,7 +824,7 @@
             </div>
           </li>
         </ul>
-      </nav>
+      </div>
       <div class="row">
         <div class="col-xs-12">
           <div id="content" class="container-fluid">
@@ -837,20 +844,16 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-tables-01-table-standard" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-01-table-standard" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-01-table-standard" aria-expanded="false" role="note">
     <div class="alert alert-info">
-      <p><strong>3.3.0</strong></p>
+      <p><strong>3.2.0</strong></p>
 <ul>
-<li>
-<p>use <code>coal</code> instead of <code>#999</code> for <code>caption</code>s text color
-<strong>3.0.0</strong></p>
-</li>
-<li>
-<p>remove attribute <code>role=&quot;columnheader&quot;</code> on tag <code>&lt;tr&gt;</code></p>
-</li>
-<li>
-<p>remove attribute <code>role=&quot;rowheader&quot;</code> on tag <code>&lt;th&gt;</code></p>
-</li>
+<li>use <code>coal</code> instead of <code>#999</code> for <code>caption</code>s text color</li>
+</ul>
+<p><strong>3.0.0</strong></p>
+<ul>
+<li>remove attribute <code>role=&quot;columnheader&quot;</code> on tag <code>&lt;tr&gt;</code></li>
+<li>remove attribute <code>role=&quot;rowheader&quot;</code> on tag <code>&lt;th&gt;</code></li>
 </ul>
 <p><strong>2.1.9</strong></p>
 <ul>
@@ -916,7 +919,7 @@
 	</tfoot>
 </table>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-01-table-standard" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-01-table-standard" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-tables-01-table-standard" role="note">
@@ -983,7 +986,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-tables-02-table-cycle" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-02-table-cycle" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-02-table-cycle" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -1175,7 +1178,7 @@
 	</tfoot>
 </table>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-02-table-cycle" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-02-table-cycle" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-tables-02-table-cycle" role="note">
@@ -1376,7 +1379,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-tables-03-table-cycle-pairs" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-03-table-cycle-pairs" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-03-table-cycle-pairs" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -1493,7 +1496,7 @@
 	</tfoot>
 </table>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-03-table-cycle-pairs" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-03-table-cycle-pairs" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-tables-03-table-cycle-pairs" role="note">
@@ -1619,7 +1622,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-tables-04-table-with-caption" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-04-table-with-caption" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-04-table-with-caption" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -1708,7 +1711,7 @@
 	</tfoot>
 </table>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-04-table-with-caption" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-04-table-with-caption" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-tables-04-table-with-caption" role="note">
@@ -1806,7 +1809,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-tables-05-table-zebra" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-05-table-zebra" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-05-table-zebra" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -1871,7 +1874,7 @@
 	</tfoot>
 </table>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-05-table-zebra" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-05-table-zebra" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-tables-05-table-zebra" role="note">
@@ -1938,7 +1941,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-tables-06-table-zebra-cycle-single" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-06-table-zebra-cycle-single" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-06-table-zebra-cycle-single" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -2131,7 +2134,7 @@
 	</tfoot>
 </table>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-06-table-zebra-cycle-single" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-06-table-zebra-cycle-single" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-tables-06-table-zebra-cycle-single" role="note">
@@ -2332,7 +2335,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-tables-07-table-zebra-cycle-pairs" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-07-table-zebra-cycle-pairs" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-07-table-zebra-cycle-pairs" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -2449,7 +2452,7 @@
 	</tfoot>
 </table>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-07-table-zebra-cycle-pairs" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-07-table-zebra-cycle-pairs" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-tables-07-table-zebra-cycle-pairs" role="note">
@@ -2575,7 +2578,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-tables-08-table-zebra-caption" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-08-table-zebra-caption" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-08-table-zebra-caption" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -2665,7 +2668,7 @@
 	</tfoot>
 </table>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-08-table-zebra-caption" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-08-table-zebra-caption" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-tables-08-table-zebra-caption" role="note">
@@ -2763,7 +2766,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-tables-09-table-highlight" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-09-table-highlight" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-09-table-highlight" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -2828,7 +2831,7 @@
 	</tfoot>
 </table>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-09-table-highlight" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-09-table-highlight" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-tables-09-table-highlight" role="note">
@@ -2895,7 +2898,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-tables-10-table-highlight-cycle" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-10-table-highlight-cycle" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-10-table-highlight-cycle" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -3088,7 +3091,7 @@
 	</tfoot>
 </table>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-10-table-highlight-cycle" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-10-table-highlight-cycle" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-tables-10-table-highlight-cycle" role="note">
@@ -3289,7 +3292,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-tables-11-table-highlight-cycle-pairs" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-11-table-highlight-cycle-pairs" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-11-table-highlight-cycle-pairs" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -3408,7 +3411,7 @@
 	</tfoot>
 </table>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-11-table-highlight-cycle-pairs" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-11-table-highlight-cycle-pairs" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-tables-11-table-highlight-cycle-pairs" role="note">
@@ -3536,7 +3539,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-tables-12-table-highlight-caption" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-12-table-highlight-caption" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-12-table-highlight-caption" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -3626,7 +3629,7 @@
 	</tfoot>
 </table>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-12-table-highlight-caption" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-12-table-highlight-caption" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-tables-12-table-highlight-caption" role="note">
@@ -3724,7 +3727,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-tables-13-table-sortable" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-13-table-sortable" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-13-table-sortable" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -3785,7 +3788,7 @@
 	</tfoot>
 </table>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-13-table-sortable" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-13-table-sortable" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-tables-13-table-sortable" role="note">
@@ -3852,7 +3855,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-tables-14-table-expandable" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-14-table-expandable" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-14-table-expandable" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -3934,7 +3937,7 @@
 	</tfoot>
 </table>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-14-table-expandable" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-14-table-expandable" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-tables-14-table-expandable" role="note">
@@ -4010,7 +4013,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-tables-15-table-ruled" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-15-table-ruled" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-15-table-ruled" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -4053,7 +4056,7 @@
 	</tbody>
 </table>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-15-table-ruled" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-15-table-ruled" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-tables-15-table-ruled" role="note">
@@ -4099,7 +4102,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-tables-16-table-unruled" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-16-table-unruled" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-tables-16-table-unruled" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -4141,7 +4144,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-16-table-unruled" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-tables-16-table-unruled" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-tables-16-table-unruled" role="note">

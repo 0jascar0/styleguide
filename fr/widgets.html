@@ -93,10 +93,13 @@
             <!-- begin: sitesearch desktop-->
             <form class="form-horizontal form-search pull-right">
               <h2 class="sr-only">Chercher</h2>
-              <label for="webguiedelines-search-standard" class="sr-only">Chercher</label>
-              <input id="webguiedelines-search-standard" class="form-control search-input" type="text" placeholder="Chercher"/>
-              <span class="icon icon--close search-reset">
+              <label for="webguidelines-search-standard" class="sr-only">Chercher</label>
+              <input id="webguidelines-search-standard" class="form-control search-input" type="text" placeholder="Chercher"/>
+              <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
                 <span class="sr-only">Rétablir</span>
+              </button>
+              <span class="icon icon--search">
+                <span class="sr-only">Chercher</span>
               </span>
               <div class="search-results">
                 <div class="search-results-list"></div>
@@ -106,7 +109,7 @@
           </div>
         </div>
       </header>
-      <nav class="nav-main yamm navbar" id="main-navigation">
+      <div class="nav-main yamm navbar" id="main-navigation">
         <h2 class="sr-only">Navigation</h2>
         <!-- The mobile navigation -->
         <section class="nav-mobile">
@@ -212,13 +215,17 @@
                 <span class="icon icon--search"></span>
               </a>
               <div class="dropdown-menu" role="menu">
-      
                 <div class="mod mod-searchfield global-search global-search-mobile">
                   <form class="form">
                     <h2 class="sr-only">Chercher</h2>
-                    <label for="webguiedelines-search-mobile" class="sr-only">Chercher</label>
-                    <input id="webguiedelines-search-mobile" class="search-input form-control" type="text" placeholder="Chercher">
-                    <span class="icon icon--search"></span>
+                    <label for="webguidelines-search-mobile" class="sr-only">Chercher</label>
+                    <input id="webguidelines-search-mobile" class="search-input form-control" type="text" placeholder="Chercher">
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
+                      <span class="sr-only">Rétablir</span>
+                    </button>
+                    <span class="icon icon--search">
+                      <span class="sr-only">Chercher</span>
+                    </span>
                     <div class="search-results">
                       <div class="search-results-list"></div>
                     </div>
@@ -817,7 +824,7 @@
             </div>
           </li>
         </ul>
-      </nav>
+      </div>
       <div class="row">
         <div class="col-xs-12">
           <div id="content" class="container-fluid">
@@ -837,7 +844,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-03-widgets-01-alerts" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-03-widgets-01-alerts" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-03-widgets-01-alerts" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>Accessibilité</strong>
 Vous pouvez ajouter un <code>&lt;span class=&quot;sr-only&quot;&gt;type d’alerte&lt;/span&gt;</code> si le <code>role=&quot;alert&quot;</code> ne fournit pas suffisamment d’informations à l’utilisateur final.</p>
@@ -864,7 +871,7 @@ Vous pouvez ajouter un <code>&lt;span class=&quot;sr-only&quot;&gt;type d’aler
 	<span class="sr-only">danger:</span> Danger
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-widgets-01-alerts" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-widgets-01-alerts" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-widgets-01-alerts" role="note">
@@ -916,7 +923,7 @@ Vous pouvez ajouter un <code>&lt;span class=&quot;sr-only&quot;&gt;type d’aler
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-widgets-02-emergency" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-widgets-02-emergency" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-widgets-02-emergency" role="note">
@@ -978,7 +985,7 @@ Vous pouvez ajouter un <code>&lt;span class=&quot;sr-only&quot;&gt;type d’aler
           </address>
 					<dl class="dl-horizontal">
 						<dt><abbr title="Phone">Tel.</abbr></dt>
-						<dd><a href="tel:+41 31 322 31 53">+41 31 322 31 53</a></dd>
+						<dd><a href="tel:+41313223153">+41 31 322 31 53</a></dd>
 						<dt>Fax</dt>
 						<dd>+41 31 322 31 54</dd>
 					</dl>
@@ -1008,7 +1015,7 @@ Vous pouvez ajouter un <code>&lt;span class=&quot;sr-only&quot;&gt;type d’aler
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-widgets-03-contact-box" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-03-widgets-03-contact-box" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-03-widgets-03-contact-box" role="note">
@@ -1033,7 +1040,7 @@ Vous pouvez ajouter un <code>&lt;span class=&quot;sr-only&quot;&gt;type d’aler
           &lt;/address&gt;
 					&lt;dl class&#x3D;&quot;dl-horizontal&quot;&gt;
 						&lt;dt&gt;&lt;abbr title&#x3D;&quot;Phone&quot;&gt;Tel.&lt;/abbr&gt;&lt;/dt&gt;
-						&lt;dd&gt;&lt;a href&#x3D;&quot;tel:+41 31 322 31 53&quot;&gt;+41 31 322 31 53&lt;/a&gt;&lt;/dd&gt;
+						&lt;dd&gt;&lt;a href&#x3D;&quot;tel:+41313223153&quot;&gt;+41 31 322 31 53&lt;/a&gt;&lt;/dd&gt;
 						&lt;dt&gt;Fax&lt;/dt&gt;
 						&lt;dd&gt;+41 31 322 31 54&lt;/dd&gt;
 					&lt;/dl&gt;

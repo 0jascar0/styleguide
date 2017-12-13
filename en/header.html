@@ -93,10 +93,13 @@
             <!-- begin: sitesearch desktop-->
             <form class="form-horizontal form-search pull-right">
               <h2 class="sr-only">Search</h2>
-              <label for="webguiedelines-search-standard" class="sr-only">Search</label>
-              <input id="webguiedelines-search-standard" class="form-control search-input" type="text" placeholder="Search"/>
-              <span class="icon icon--close search-reset">
+              <label for="webguidelines-search-standard" class="sr-only">Search</label>
+              <input id="webguidelines-search-standard" class="form-control search-input" type="text" placeholder="Search"/>
+              <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
                 <span class="sr-only">Reset</span>
+              </button>
+              <span class="icon icon--search">
+                <span class="sr-only">Search</span>
               </span>
               <div class="search-results">
                 <div class="search-results-list"></div>
@@ -106,7 +109,7 @@
           </div>
         </div>
       </header>
-      <nav class="nav-main yamm navbar" id="main-navigation">
+      <div class="nav-main yamm navbar" id="main-navigation">
         <h2 class="sr-only">Navigation</h2>
         <!-- The mobile navigation -->
         <section class="nav-mobile">
@@ -212,13 +215,17 @@
                 <span class="icon icon--search"></span>
               </a>
               <div class="dropdown-menu" role="menu">
-      
                 <div class="mod mod-searchfield global-search global-search-mobile">
                   <form class="form">
                     <h2 class="sr-only">Search</h2>
-                    <label for="webguiedelines-search-mobile" class="sr-only">Search</label>
-                    <input id="webguiedelines-search-mobile" class="search-input form-control" type="text" placeholder="Search">
-                    <span class="icon icon--search"></span>
+                    <label for="webguidelines-search-mobile" class="sr-only">Search</label>
+                    <input id="webguidelines-search-mobile" class="search-input form-control" type="text" placeholder="Search">
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
+                      <span class="sr-only">Reset</span>
+                    </button>
+                    <span class="icon icon--search">
+                      <span class="sr-only">Search</span>
+                    </span>
                     <div class="search-results">
                       <div class="search-results-list"></div>
                     </div>
@@ -817,7 +824,7 @@
             </div>
           </li>
         </ul>
-      </nav>
+      </div>
       <div class="row">
         <div class="col-xs-12">
           <div id="content" class="container-fluid">
@@ -837,7 +844,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-02-header-01-logo" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-02-header-01-logo" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-02-header-01-logo" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -859,7 +866,7 @@
   </a></header>
 <nav class="nav-main"></nav>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-01-logo" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-01-logo" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-header-01-logo" role="note">
@@ -887,7 +894,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-02-header-02-accessibility-navigation" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-02-header-02-accessibility-navigation" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-02-header-02-accessibility-navigation" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>2.1.8</strong></p>
 <ul>
@@ -921,7 +928,7 @@
 	<!-- Other smart links can be added for main website functionalities -->
 </ul>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-02-accessibility-navigation" aria-expanded="true" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-02-accessibility-navigation" aria-expanded="true" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse in" aria-expanded="true" id="code-02-header-02-accessibility-navigation" role="note">
@@ -959,7 +966,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-02-header-03-service-navigation" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-02-header-03-service-navigation" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-02-header-03-service-navigation" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>2.1.2:</strong></p>
 <ul>
@@ -977,8 +984,8 @@
     <div class="clearfix">
       <header>
 	<section class="nav-services clearfix">
+		<h2 class="sr-only">Services navigation</h2>
 		<nav class="nav-service">
-			<h2 class="sr-only">Services navigation</h2>
 			<ul>
 				<li><a href="#">Emergencies</a></li>
 				<li><a href="#">Jobs</a></li>
@@ -994,14 +1001,14 @@
   </a></header>
 <nav class="nav-main"></nav>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-03-service-navigation" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-03-service-navigation" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-header-03-service-navigation" role="note">
     <pre><code class="language-markup">&lt;header&gt;
 	&lt;section class&#x3D;&quot;nav-services clearfix&quot;&gt;
+		&lt;h2 class&#x3D;&quot;sr-only&quot;&gt;Services navigation&lt;/h2&gt;
 		&lt;nav class&#x3D;&quot;nav-service&quot;&gt;
-			&lt;h2 class&#x3D;&quot;sr-only&quot;&gt;Services navigation&lt;/h2&gt;
 			&lt;ul&gt;
 				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Emergencies&lt;/a&gt;&lt;/li&gt;
 				&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Jobs&lt;/a&gt;&lt;/li&gt;
@@ -1035,7 +1042,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-02-header-04-site-search" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-02-header-04-site-search" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-02-header-04-site-search" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>2.1.2:</strong></p>
 <ul>
@@ -1053,33 +1060,51 @@
   <div class="component-example">
     <div class="clearfix">
       <header>
-	<form class="form-horizontal form-search pull-right">
-		<h2 class="sr-only">Search</h2>
-		<label for="search-field" class="sr-only">Search:</label>
-		<input id="search-field" class="form-control search-field" type="text" placeholder="Search">
-	</form>
-
 	<a href="#" class="brand hidden-xs" title="Back to home">
     <img src="../img/logo-CH.svg" onerror="this.onerror=null; this.src='../img/logo-CH.png'" alt="Back to home" />
     <h1>Department of the Environment, Transport, Energy and Communications</h1>
-  </a></header>
+  </a>
+	<div class="mod mod-searchfield global-search global-search-standard">
+		<form class="form-horizontal form-search pull-right">
+			<h2 class="sr-only">Search</h2>
+			<label for="search-field" class="sr-only">Search:</label>
+			<input id="search-field" class="form-control search-field" type="text" placeholder="Search">
+			<button class="icon icon--close icon--after search-reset" tabindex="0" role="button">
+        <span class="sr-only">Clear</span>
+      </button>
+			<span class="icon icon--search"><span class="sr-only">Search</span></span>
+			<div class="search-results">
+				<div class="search-results-list"></div>
+			</div>
+		</form>
+	</div>
+</header>
 <nav class="nav-main"></nav>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-04-site-search" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-04-site-search" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-header-04-site-search" role="note">
     <pre><code class="language-markup">&lt;header&gt;
-	&lt;form class&#x3D;&quot;form-horizontal form-search pull-right&quot;&gt;
-		&lt;h2 class&#x3D;&quot;sr-only&quot;&gt;Search&lt;/h2&gt;
-		&lt;label for&#x3D;&quot;search-field&quot; class&#x3D;&quot;sr-only&quot;&gt;Search:&lt;/label&gt;
-		&lt;input id&#x3D;&quot;search-field&quot; class&#x3D;&quot;form-control search-field&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Search&quot;&gt;
-	&lt;/form&gt;
-
 	&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;brand hidden-xs&quot; title&#x3D;&quot;Back to home&quot;&gt;
     &lt;img src&#x3D;&quot;../img/logo-CH.svg&quot; onerror&#x3D;&quot;this.onerror&#x3D;null; this.src&#x3D;&#x27;../img/logo-CH.png&#x27;&quot; alt&#x3D;&quot;Back to home&quot; /&gt;
     &lt;h1&gt;Department of the Environment, Transport, Energy and Communications&lt;/h1&gt;
-  &lt;/a&gt;&lt;/header&gt;
+  &lt;/a&gt;
+	&lt;div class&#x3D;&quot;mod mod-searchfield global-search global-search-standard&quot;&gt;
+		&lt;form class&#x3D;&quot;form-horizontal form-search pull-right&quot;&gt;
+			&lt;h2 class&#x3D;&quot;sr-only&quot;&gt;Search&lt;/h2&gt;
+			&lt;label for&#x3D;&quot;search-field&quot; class&#x3D;&quot;sr-only&quot;&gt;Search:&lt;/label&gt;
+			&lt;input id&#x3D;&quot;search-field&quot; class&#x3D;&quot;form-control search-field&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Search&quot;&gt;
+			&lt;button class&#x3D;&quot;icon icon--close icon--after search-reset&quot; tabindex&#x3D;&quot;0&quot; role&#x3D;&quot;button&quot;&gt;
+        &lt;span class&#x3D;&quot;sr-only&quot;&gt;Clear&lt;/span&gt;
+      &lt;/button&gt;
+			&lt;span class&#x3D;&quot;icon icon--search&quot;&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Search&lt;/span&gt;&lt;/span&gt;
+			&lt;div class&#x3D;&quot;search-results&quot;&gt;
+				&lt;div class&#x3D;&quot;search-results-list&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/form&gt;
+	&lt;/div&gt;
+&lt;/header&gt;
 &lt;nav class&#x3D;&quot;nav-main&quot;&gt;&lt;/nav&gt;</code></pre>
   </div>
 
@@ -1119,7 +1144,7 @@ var searchData &#x3D; [&quot;Aargau&quot;, &quot;Appenzell A. Rh.&quot;, &quot;A
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-02-header-05-language-selector" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-02-header-05-language-selector" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-02-header-05-language-selector" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.0.0</strong></p>
 <ul>
@@ -1182,7 +1207,7 @@ var searchData &#x3D; [&quot;Aargau&quot;, &quot;Appenzell A. Rh.&quot;, &quot;A
   </a></header>
 <nav class="nav-main"></nav>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-05-language-selector" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-05-language-selector" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-header-05-language-selector" role="note">
@@ -1224,7 +1249,7 @@ var searchData &#x3D; [&quot;Aargau&quot;, &quot;Appenzell A. Rh.&quot;, &quot;A
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-02-header-06-topics" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-02-header-06-topics" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-02-header-06-topics" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>2.1.2:</strong></p>
 <ul>
@@ -1247,7 +1272,7 @@ var searchData &#x3D; [&quot;Aargau&quot;, &quot;Appenzell A. Rh.&quot;, &quot;A
     <h1>Department of the Environment, Transport, Energy and Communications</h1>
   </a>
 	<!-- Standard Bootstrap `navbar` structure with the `yamm` mega-menu library -->
-	<nav class="navbar yamm yamm--select" role="navigation">
+	<nav class="navbar yamm yamm--select">
 		<h2 class="sr-only">By Topics</h2>
 		<ul>
 			<!-- Init dropdown with the `pull-right` class if you want to have your Topics select on the right -->
@@ -1360,7 +1385,7 @@ var searchData &#x3D; [&quot;Aargau&quot;, &quot;Appenzell A. Rh.&quot;, &quot;A
 </header>
 <nav class="nav-main"></nav>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-06-topics" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-06-topics" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-header-06-topics" role="note">
@@ -1370,7 +1395,7 @@ var searchData &#x3D; [&quot;Aargau&quot;, &quot;Appenzell A. Rh.&quot;, &quot;A
     &lt;h1&gt;Department of the Environment, Transport, Energy and Communications&lt;/h1&gt;
   &lt;/a&gt;
 	&lt;!-- Standard Bootstrap &#x60;navbar&#x60; structure with the &#x60;yamm&#x60; mega-menu library --&gt;
-	&lt;nav class&#x3D;&quot;navbar yamm yamm--select&quot; role&#x3D;&quot;navigation&quot;&gt;
+	&lt;nav class&#x3D;&quot;navbar yamm yamm--select&quot;&gt;
 		&lt;h2 class&#x3D;&quot;sr-only&quot;&gt;By Topics&lt;/h2&gt;
 		&lt;ul&gt;
 			&lt;!-- Init dropdown with the &#x60;pull-right&#x60; class if you want to have your Topics select on the right --&gt;
@@ -1501,7 +1526,7 @@ var searchData &#x3D; [&quot;Aargau&quot;, &quot;Appenzell A. Rh.&quot;, &quot;A
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-02-header-07-treecrumb" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-02-header-07-treecrumb" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-02-header-07-treecrumb" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>2.5.0:</strong></p>
 <ul>
@@ -1525,7 +1550,7 @@ var searchData &#x3D; [&quot;Aargau&quot;, &quot;Appenzell A. Rh.&quot;, &quot;A
       <header>
 	<div class="clearfix">
 		<!-- Standard Bootstrap `navbar` structure with the `treecrumb` class -->
-		<nav class="navbar treecrumb pull-left" role="navigation">
+		<nav class="navbar treecrumb pull-left">
 			<h2 class="sr-only">Orientation in the website</h2>
 			<ul class="nav navbar-nav">
 				<!-- Treecrumb dropdown element -->
@@ -1573,14 +1598,14 @@ var searchData &#x3D; [&quot;Aargau&quot;, &quot;Appenzell A. Rh.&quot;, &quot;A
   </a></header>
 <nav class="nav-main"></nav>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-07-treecrumb" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-02-header-07-treecrumb" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-02-header-07-treecrumb" role="note">
     <pre><code class="language-markup">&lt;header&gt;
 	&lt;div class&#x3D;&quot;clearfix&quot;&gt;
 		&lt;!-- Standard Bootstrap &#x60;navbar&#x60; structure with the &#x60;treecrumb&#x60; class --&gt;
-		&lt;nav class&#x3D;&quot;navbar treecrumb pull-left&quot; role&#x3D;&quot;navigation&quot;&gt;
+		&lt;nav class&#x3D;&quot;navbar treecrumb pull-left&quot;&gt;
 			&lt;h2 class&#x3D;&quot;sr-only&quot;&gt;Orientation in the website&lt;/h2&gt;
 			&lt;ul class&#x3D;&quot;nav navbar-nav&quot;&gt;
 				&lt;!-- Treecrumb dropdown element --&gt;

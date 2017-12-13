@@ -93,10 +93,13 @@
             <!-- begin: sitesearch desktop-->
             <form class="form-horizontal form-search pull-right">
               <h2 class="sr-only">Chercher</h2>
-              <label for="webguiedelines-search-standard" class="sr-only">Chercher</label>
-              <input id="webguiedelines-search-standard" class="form-control search-input" type="text" placeholder="Chercher"/>
-              <span class="icon icon--close search-reset">
+              <label for="webguidelines-search-standard" class="sr-only">Chercher</label>
+              <input id="webguidelines-search-standard" class="form-control search-input" type="text" placeholder="Chercher"/>
+              <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
                 <span class="sr-only">Rétablir</span>
+              </button>
+              <span class="icon icon--search">
+                <span class="sr-only">Chercher</span>
               </span>
               <div class="search-results">
                 <div class="search-results-list"></div>
@@ -106,7 +109,7 @@
           </div>
         </div>
       </header>
-      <nav class="nav-main yamm navbar" id="main-navigation">
+      <div class="nav-main yamm navbar" id="main-navigation">
         <h2 class="sr-only">Navigation</h2>
         <!-- The mobile navigation -->
         <section class="nav-mobile">
@@ -212,13 +215,17 @@
                 <span class="icon icon--search"></span>
               </a>
               <div class="dropdown-menu" role="menu">
-      
                 <div class="mod mod-searchfield global-search global-search-mobile">
                   <form class="form">
                     <h2 class="sr-only">Chercher</h2>
-                    <label for="webguiedelines-search-mobile" class="sr-only">Chercher</label>
-                    <input id="webguiedelines-search-mobile" class="search-input form-control" type="text" placeholder="Chercher">
-                    <span class="icon icon--search"></span>
+                    <label for="webguidelines-search-mobile" class="sr-only">Chercher</label>
+                    <input id="webguidelines-search-mobile" class="search-input form-control" type="text" placeholder="Chercher">
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
+                      <span class="sr-only">Rétablir</span>
+                    </button>
+                    <span class="icon icon--search">
+                      <span class="sr-only">Chercher</span>
+                    </span>
                     <div class="search-results">
                       <div class="search-results-list"></div>
                     </div>
@@ -817,7 +824,7 @@
             </div>
           </li>
         </ul>
-      </nav>
+      </div>
       <div class="row">
         <div class="col-xs-12">
           <div id="content" class="container-fluid">
@@ -837,7 +844,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-04-footer-01-site-map" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-04-footer-01-site-map" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-04-footer-01-site-map" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>2.5.0:</strong></p>
 <ul>
@@ -872,7 +879,7 @@
 	<div class="site-map">
 		<h2 class="sr-only">Footer</h2>
 
-		<a href="#site-map" data-target="#site-map" data-toggle="collapse" class="site-map-toggle collapsed">Sitemap</a>
+		<a role="button" tabindex="0" data-target="#site-map" data-toggle="collapse" class="site-map-toggle collapsed" aria-label="Toggle sitemap">Sitemap</a>
 
 		<div class="container-fluid" id="site-map">
 			<div class="row">
@@ -1008,7 +1015,7 @@
 	</div>
 </footer>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-footer-01-site-map" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-footer-01-site-map" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-04-footer-01-site-map" role="note">
@@ -1025,7 +1032,7 @@
 	&lt;div class&#x3D;&quot;site-map&quot;&gt;
 		&lt;h2 class&#x3D;&quot;sr-only&quot;&gt;Footer&lt;/h2&gt;
 
-		&lt;a href&#x3D;&quot;#site-map&quot; data-target&#x3D;&quot;#site-map&quot; data-toggle&#x3D;&quot;collapse&quot; class&#x3D;&quot;site-map-toggle collapsed&quot;&gt;Sitemap&lt;/a&gt;
+		&lt;a role&#x3D;&quot;button&quot; tabindex&#x3D;&quot;0&quot; data-target&#x3D;&quot;#site-map&quot; data-toggle&#x3D;&quot;collapse&quot; class&#x3D;&quot;site-map-toggle collapsed&quot; aria-label&#x3D;&quot;Toggle sitemap&quot;&gt;Sitemap&lt;/a&gt;
 
 		&lt;div class&#x3D;&quot;container-fluid&quot; id&#x3D;&quot;site-map&quot;&gt;
 			&lt;div class&#x3D;&quot;row&quot;&gt;
@@ -1179,9 +1186,9 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-04-footer-02-social-media" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-04-footer-02-social-media" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-04-footer-02-social-media" aria-expanded="false" role="note">
     <div class="alert alert-info">
-      <p><strong>3.3.0:</strong></p>
+      <p><strong>3.2.0:</strong></p>
 <ul>
 <li>ajout d'un titre pour les lecteurs d'écran</li>
 </ul>
@@ -1203,8 +1210,8 @@
 	<div class="container-fluid">
 		<h3>Informiert bleiben</h3>
 		<nav class="links-social">
-			<h4 id="social_media" class="sr-only">Social media</h4>
-			<ul aria-labelledby="social_media">
+			<label class="sr-only">Social media</label>
+			<ul>
 				<li><a class="icon icon--before icon--twitter" href="#">Twitter</a></li>
 				<li><a class="icon icon--before icon--facebook" href="#">Facebook</a></li>
 				<li><a class="icon icon--before icon--rss" href="#">RSS</a></li>
@@ -1224,7 +1231,7 @@
 	</div>
 </footer>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-footer-02-social-media" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-footer-02-social-media" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-04-footer-02-social-media" role="note">
@@ -1233,8 +1240,8 @@
 	&lt;div class&#x3D;&quot;container-fluid&quot;&gt;
 		&lt;h3&gt;Informiert bleiben&lt;/h3&gt;
 		&lt;nav class&#x3D;&quot;links-social&quot;&gt;
-			&lt;h4 id&#x3D;&quot;social_media&quot; class&#x3D;&quot;sr-only&quot;&gt;Social media&lt;/h4&gt;
-			&lt;ul aria-labelledby&#x3D;&quot;social_media&quot;&gt;
+			&lt;label class&#x3D;&quot;sr-only&quot;&gt;Social media&lt;/label&gt;
+			&lt;ul&gt;
 				&lt;li&gt;&lt;a class&#x3D;&quot;icon icon--before icon--twitter&quot; href&#x3D;&quot;#&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
 				&lt;li&gt;&lt;a class&#x3D;&quot;icon icon--before icon--facebook&quot; href&#x3D;&quot;#&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
 				&lt;li&gt;&lt;a class&#x3D;&quot;icon icon--before icon--rss&quot; href&#x3D;&quot;#&quot;&gt;RSS&lt;/a&gt;&lt;/li&gt;
@@ -1272,7 +1279,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-04-footer-03-footbar" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-04-footer-03-footbar" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-04-footer-03-footbar" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>3.2.0:</strong></p>
 <ul>
@@ -1300,7 +1307,7 @@
 	</div>
 </footer>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-footer-03-footbar" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-footer-03-footbar" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-04-footer-03-footbar" role="note">

@@ -93,10 +93,13 @@
             <!-- begin: sitesearch desktop-->
             <form class="form-horizontal form-search pull-right">
               <h2 class="sr-only">Suche</h2>
-              <label for="webguiedelines-search-standard" class="sr-only">Suche</label>
-              <input id="webguiedelines-search-standard" class="form-control search-input" type="text" placeholder="Suche"/>
-              <span class="icon icon--close search-reset">
+              <label for="webguidelines-search-standard" class="sr-only">Suche</label>
+              <input id="webguidelines-search-standard" class="form-control search-input" type="text" placeholder="Suche"/>
+              <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
                 <span class="sr-only">Zurücksetzen</span>
+              </button>
+              <span class="icon icon--search">
+                <span class="sr-only">Suche</span>
               </span>
               <div class="search-results">
                 <div class="search-results-list"></div>
@@ -106,7 +109,7 @@
           </div>
         </div>
       </header>
-      <nav class="nav-main yamm navbar" id="main-navigation">
+      <div class="nav-main yamm navbar" id="main-navigation">
         <h2 class="sr-only">Navigation</h2>
         <!-- The mobile navigation -->
         <section class="nav-mobile">
@@ -212,13 +215,17 @@
                 <span class="icon icon--search"></span>
               </a>
               <div class="dropdown-menu" role="menu">
-      
                 <div class="mod mod-searchfield global-search global-search-mobile">
                   <form class="form">
                     <h2 class="sr-only">Suche</h2>
-                    <label for="webguiedelines-search-mobile" class="sr-only">Suche</label>
-                    <input id="webguiedelines-search-mobile" class="search-input form-control" type="text" placeholder="Suche">
-                    <span class="icon icon--search"></span>
+                    <label for="webguidelines-search-mobile" class="sr-only">Suche</label>
+                    <input id="webguidelines-search-mobile" class="search-input form-control" type="text" placeholder="Suche">
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
+                      <span class="sr-only">Zurücksetzen</span>
+                    </button>
+                    <span class="icon icon--search">
+                      <span class="sr-only">Suche</span>
+                    </span>
                     <div class="search-results">
                       <div class="search-results-list"></div>
                     </div>
@@ -817,7 +824,7 @@
             </div>
           </li>
         </ul>
-      </nav>
+      </div>
       <div class="row">
         <div class="col-xs-12">
           <div id="content" class="container-fluid">
@@ -837,7 +844,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-04-functions-01-print" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-04-functions-01-print" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-04-functions-01-print" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>2.5.4:</strong></p>
 <ul>
@@ -867,7 +874,7 @@
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos labore non cum eligendi cumque, ipsa, repudiandae consequatur aut ducimus, molestiae nesciunt consectetur laborum pariatur accusamus in aspernatur quod quae possimus!</p>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-functions-01-print" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-functions-01-print" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-04-functions-01-print" role="note">
@@ -898,9 +905,9 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-04-functions-02-social-sharing" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-04-functions-02-social-sharing" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-04-functions-02-social-sharing" aria-expanded="false" role="note">
     <div class="alert alert-info">
-      <p><strong>3.3.0:</strong></p>
+      <p><strong>3.2.0:</strong></p>
 <ul>
 <li>added a heading for screen readers</li>
 </ul>
@@ -923,7 +930,7 @@
   <div class="component-example">
     <div class="clearfix">
       <div class="social-sharing">
-	<h3 class="sr-only">Social media sharing</h3>
+	<label class="sr-only">Social media sharing</label>
 	<a href="#" aria-label="Facebook" class="social-sharing-facebook"></a>
 	<a href="#" aria-label="Twitter" class="social-sharing-twitter"></a>
 	<a href="#" aria-label="Google+" class="social-sharing-google"></a>
@@ -931,12 +938,12 @@
 	<a href="#" aria-label="LinkedIn" class="social-sharing-linkedin"></a>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-functions-02-social-sharing" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-functions-02-social-sharing" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-04-functions-02-social-sharing" role="note">
     <pre><code class="language-markup">&lt;div class&#x3D;&quot;social-sharing&quot;&gt;
-	&lt;h3 class&#x3D;&quot;sr-only&quot;&gt;Social media sharing&lt;/h3&gt;
+	&lt;label class&#x3D;&quot;sr-only&quot;&gt;Social media sharing&lt;/label&gt;
 	&lt;a href&#x3D;&quot;#&quot; aria-label&#x3D;&quot;Facebook&quot; class&#x3D;&quot;social-sharing-facebook&quot;&gt;&lt;/a&gt;
 	&lt;a href&#x3D;&quot;#&quot; aria-label&#x3D;&quot;Twitter&quot; class&#x3D;&quot;social-sharing-twitter&quot;&gt;&lt;/a&gt;
 	&lt;a href&#x3D;&quot;#&quot; aria-label&#x3D;&quot;Google+&quot; class&#x3D;&quot;social-sharing-google&quot;&gt;&lt;/a&gt;
@@ -987,7 +994,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-functions-03-downloading-files" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-functions-03-downloading-files" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-04-functions-03-downloading-files" role="note">

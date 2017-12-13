@@ -24,7 +24,7 @@
 
     // Init Typeahead on search-fields
     $searchFields.typeahead({
-      hint: true,
+      hint: false,
       highlight: true,
       minLength: 1
     },
@@ -34,14 +34,6 @@
       source: bloodhound.ttAdapter()
     });
   }
-
-  // Insert the icons
-  $searchFields.after('<span class="icon icon--close" data-form-search-clear><span class="sr-only">Clear</span></span>');
-  $('.form-search').append('<button class="icon icon--search icon--before"><span class="sr-only">Search</span></button>');
-
-  $('body').on('click', '[data-form-search-clear]', function () {
-    $('#search-field').val('').focus(); // clear search field and refocus it
-  });
 
 }) (jQuery, (typeof searchData === 'undefined' ? false : searchData));
 
@@ -442,6 +434,11 @@ $.printPreview = {
     });
   });
 
+  // "tabindex = -1" is added by bootstrap-accessibility-plugin to dropdown's elements.
+  // The yamm menu uses the dropdown class, but is not a conventional dropdown, hence, the tabindex must not
+  // be present.
+  $dropdown.find('li a').removeAttr('tabindex');
+
   $dropdownToggle.on('click', function() {
     $(this).parents($dropdown).trigger('get.hidden');
   });
@@ -515,19 +512,19 @@ $.printPreview = {
       templates: {
         empty: function() {
           return [
-            '<li class="search-result-header"><strong>',
+            '<li class="search-result-header">',
               title,
-            '</strong></li>',
+            '</li>',
             '<li>',
               window.translations['global-search']['nothing-found'],
-            '</li>',
+            '</li>'
           ].join('');
         },
         header: function() {
           return [
-            '<li class="search-result-header"><strong>',
+            '<li class="search-result-header">',
               title,
-            '</strong></li>'
+            '</li>'
           ].join('');
         },
         dataset: '<ul><ul>',
@@ -540,6 +537,7 @@ $.printPreview = {
 
   function initTypeahead(element) {
     $('.search-input', element).typeahead({
+      hint: false,
       highlight: true,
       menu: $('.search-results .search-results-list', element),
       classNames: {
@@ -549,16 +547,14 @@ $.printPreview = {
     }, datasets)
     .on('typeahead:selected', function (event, selection) {
       event.preventDefault();
-      $(this).typeahead('val', '')
-        .closest('.global-search').removeClass('has-input');
       window.location.replace(selection.link);
     })
     .on('typeahead:open', function() {
       $(this).closest('.global-search').addClass('focused');
     })
-    .on('typeahead:close', function () {
+    .on('typeahead:close', function() {
       $(this).closest('.global-search').removeClass('focused');
-      $(this).closest('form').trigger('reset');
+      //$(this).closest('form').trigger('reset');
     })
     .on('keyup', function (event) {
       if (event.keyCode === 27) { // ESC
@@ -575,17 +571,25 @@ $.printPreview = {
         return false;
       })
       .on('reset', function() {
-        $('.search-input', this).blur().typeahead('val', '');
+        $('.search-input', this).typeahead('val', '');
         $(this).closest('.global-search').removeClass('has-input');
       });
 
     $('.search-reset', element).on('click', function() {
       $(this).closest('form').trigger('reset');
+      $('.search-input', element).focus();
     });
   }
 
   initTypeahead($('.global-search-standard'));
   initTypeahead($('.global-search-mobile'));
+
+  // Mobile improvements:
+  $('.nav-mobile .nav-mobile-menu').parent().on('show.bs.dropdown', function () {
+    setTimeout(function () {
+      $('.nav-mobile .search-input.tt-input').val(null).focus();
+    }, 100);
+  });
 
 })(jQuery);
 

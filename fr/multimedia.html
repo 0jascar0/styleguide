@@ -93,10 +93,13 @@
             <!-- begin: sitesearch desktop-->
             <form class="form-horizontal form-search pull-right">
               <h2 class="sr-only">Chercher</h2>
-              <label for="webguiedelines-search-standard" class="sr-only">Chercher</label>
-              <input id="webguiedelines-search-standard" class="form-control search-input" type="text" placeholder="Chercher"/>
-              <span class="icon icon--close search-reset">
+              <label for="webguidelines-search-standard" class="sr-only">Chercher</label>
+              <input id="webguidelines-search-standard" class="form-control search-input" type="text" placeholder="Chercher"/>
+              <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
                 <span class="sr-only">Rétablir</span>
+              </button>
+              <span class="icon icon--search">
+                <span class="sr-only">Chercher</span>
               </span>
               <div class="search-results">
                 <div class="search-results-list"></div>
@@ -106,7 +109,7 @@
           </div>
         </div>
       </header>
-      <nav class="nav-main yamm navbar" id="main-navigation">
+      <div class="nav-main yamm navbar" id="main-navigation">
         <h2 class="sr-only">Navigation</h2>
         <!-- The mobile navigation -->
         <section class="nav-mobile">
@@ -212,13 +215,17 @@
                 <span class="icon icon--search"></span>
               </a>
               <div class="dropdown-menu" role="menu">
-      
                 <div class="mod mod-searchfield global-search global-search-mobile">
                   <form class="form">
                     <h2 class="sr-only">Chercher</h2>
-                    <label for="webguiedelines-search-mobile" class="sr-only">Chercher</label>
-                    <input id="webguiedelines-search-mobile" class="search-input form-control" type="text" placeholder="Chercher">
-                    <span class="icon icon--search"></span>
+                    <label for="webguidelines-search-mobile" class="sr-only">Chercher</label>
+                    <input id="webguidelines-search-mobile" class="search-input form-control" type="text" placeholder="Chercher">
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
+                      <span class="sr-only">Rétablir</span>
+                    </button>
+                    <span class="icon icon--search">
+                      <span class="sr-only">Chercher</span>
+                    </span>
                     <div class="search-results">
                       <div class="search-results-list"></div>
                     </div>
@@ -817,7 +824,7 @@
             </div>
           </li>
         </ul>
-      </nav>
+      </div>
       <div class="row">
         <div class="col-xs-12">
           <div id="content" class="container-fluid">
@@ -837,7 +844,7 @@
 
         <li><button class="btn btn-sm btn-link collapsed" data-toggle="collapse" data-target="#release-notes-06-multimedia-01-photo-gallery" aria-expanded="false">Release notes</button></li>
     </ul>
-  </div>  <div class="component-release-notes collapse" id="release-notes-06-multimedia-01-photo-gallery" aria-expanded="false">
+  </div>  <div class="component-release-notes collapse" id="release-notes-06-multimedia-01-photo-gallery" aria-expanded="false" role="note">
     <div class="alert alert-info">
       <p><strong>2.1.8</strong></p>
 <ul>
@@ -866,7 +873,7 @@
       </a>
 		</li>
 		<li class="separator disabled"><a aria-disabled="true" href="#">Previous</a></li>
-		<li class="active"><a aria-selected="true" href="#">1</a></li>
+		<li class="active"><a href="#">1</a></li>
 		<li><a href="#">2</a></li>
 		<li>...</li>
 		<li><a href="#">17</a></li>
@@ -1025,7 +1032,7 @@
       </a>
 		</li>
 		<li class="separator disabled"><a aria-disabled="true" href="#">Previous</a></li>
-		<li class="active"><a aria-selected="true" href="#">1</a></li>
+		<li class="active"><a href="#">1</a></li>
 		<li><a href="#">2</a></li>
 		<li>...</li>
 		<li><a href="#">17</a></li>
@@ -1039,7 +1046,7 @@
 	</ul>
 </nav>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-06-multimedia-01-photo-gallery" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-06-multimedia-01-photo-gallery" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-06-multimedia-01-photo-gallery" role="note">
@@ -1056,7 +1063,7 @@
       &lt;/a&gt;
 		&lt;/li&gt;
 		&lt;li class&#x3D;&quot;separator disabled&quot;&gt;&lt;a aria-disabled&#x3D;&quot;true&quot; href&#x3D;&quot;#&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
-		&lt;li class&#x3D;&quot;active&quot;&gt;&lt;a aria-selected&#x3D;&quot;true&quot; href&#x3D;&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+		&lt;li class&#x3D;&quot;active&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;...&lt;/li&gt;
 		&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;17&lt;/a&gt;&lt;/li&gt;
@@ -1215,7 +1222,7 @@
       &lt;/a&gt;
 		&lt;/li&gt;
 		&lt;li class&#x3D;&quot;separator disabled&quot;&gt;&lt;a aria-disabled&#x3D;&quot;true&quot; href&#x3D;&quot;#&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
-		&lt;li class&#x3D;&quot;active&quot;&gt;&lt;a aria-selected&#x3D;&quot;true&quot; href&#x3D;&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+		&lt;li class&#x3D;&quot;active&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
 		&lt;li&gt;...&lt;/li&gt;
 		&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;17&lt;/a&gt;&lt;/li&gt;
@@ -1301,7 +1308,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-06-multimedia-02-photo-gallery-single" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-06-multimedia-02-photo-gallery-single" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-06-multimedia-02-photo-gallery-single" role="note">
@@ -1409,7 +1416,7 @@
 	</div>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-06-multimedia-03-lightbox" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-06-multimedia-03-lightbox" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-06-multimedia-03-lightbox" role="note">

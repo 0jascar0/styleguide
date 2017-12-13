@@ -93,10 +93,13 @@
             <!-- begin: sitesearch desktop-->
             <form class="form-horizontal form-search pull-right">
               <h2 class="sr-only">Chercher</h2>
-              <label for="webguiedelines-search-standard" class="sr-only">Chercher</label>
-              <input id="webguiedelines-search-standard" class="form-control search-input" type="text" placeholder="Chercher"/>
-              <span class="icon icon--close search-reset">
+              <label for="webguidelines-search-standard" class="sr-only">Chercher</label>
+              <input id="webguidelines-search-standard" class="form-control search-input" type="text" placeholder="Chercher"/>
+              <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
                 <span class="sr-only">Rétablir</span>
+              </button>
+              <span class="icon icon--search">
+                <span class="sr-only">Chercher</span>
               </span>
               <div class="search-results">
                 <div class="search-results-list"></div>
@@ -106,7 +109,7 @@
           </div>
         </div>
       </header>
-      <nav class="nav-main yamm navbar" id="main-navigation">
+      <div class="nav-main yamm navbar" id="main-navigation">
         <h2 class="sr-only">Navigation</h2>
         <!-- The mobile navigation -->
         <section class="nav-mobile">
@@ -212,13 +215,17 @@
                 <span class="icon icon--search"></span>
               </a>
               <div class="dropdown-menu" role="menu">
-      
                 <div class="mod mod-searchfield global-search global-search-mobile">
                   <form class="form">
                     <h2 class="sr-only">Chercher</h2>
-                    <label for="webguiedelines-search-mobile" class="sr-only">Chercher</label>
-                    <input id="webguiedelines-search-mobile" class="search-input form-control" type="text" placeholder="Chercher">
-                    <span class="icon icon--search"></span>
+                    <label for="webguidelines-search-mobile" class="sr-only">Chercher</label>
+                    <input id="webguidelines-search-mobile" class="search-input form-control" type="text" placeholder="Chercher">
+                    <button class="icon icon--close icon--after search-reset" tabindex="0" role="button" type="button">
+                      <span class="sr-only">Rétablir</span>
+                    </button>
+                    <span class="icon icon--search">
+                      <span class="sr-only">Chercher</span>
+                    </span>
                     <div class="search-results">
                       <div class="search-results-list"></div>
                     </div>
@@ -817,7 +824,7 @@
             </div>
           </li>
         </ul>
-      </nav>
+      </div>
       <div class="row">
         <div class="col-xs-12">
           <div id="content" class="container-fluid">
@@ -854,7 +861,7 @@ Les titres peuvent également être munis de liens. Ils seront alors affichés e
 
 <h2><a href="#">Heading 2 link</a></h2>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-01-titles" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-01-titles" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-04-typography-01-titles" role="note">
@@ -899,7 +906,7 @@ Les titres peuvent également être munis de liens. Ils seront alors affichés e
 <p>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere.
 	Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui.</p>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-02-paragraphs" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-02-paragraphs" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-04-typography-02-paragraphs" role="note">
@@ -938,7 +945,7 @@ Les titres peuvent également être munis de liens. Ils seront alors affichés e
 	Lorem ipsum dolor sit amet, <cite>consectetur adipisicing elit</cite>. Quae, reprehenderit, quas, facere, placeat eveniet quia consequuntur est sint necessitatibus at perferendis modi. Officiis, mollitia deleniti nostrum. Temporibus, <a href="#">architecto fugit eveniet</a>.
 </p>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-03-text-elements" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-03-text-elements" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-04-typography-03-text-elements" role="note">
@@ -1174,7 +1181,7 @@ Les titres peuvent également être munis de liens. Ils seront alors affichés e
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 </blockquote>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-04-blockquote" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-04-blockquote" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-04-typography-04-blockquote" role="note">
@@ -1236,7 +1243,7 @@ Les titres peuvent également être munis de liens. Ils seront alors affichés e
 	<li>Lorem ipsum</li>
 </ol>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-05-lists" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-05-lists" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-04-typography-05-lists" role="note">
@@ -1295,7 +1302,7 @@ Les titres peuvent également être munis de liens. Ils seront alors affichés e
 	<li><a href="#" class="icon icon--after icon--external">Link 3</a></li>
 </ul>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-06-unstyled-lists" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-06-unstyled-lists" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-04-typography-06-unstyled-lists" role="note">
@@ -1333,7 +1340,7 @@ Les titres peuvent également être munis de liens. Ils seront alors affichés e
 	<dd>Lorem ipsum</dd>
 </dl>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-07-definition-lists" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-07-definition-lists" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-04-typography-07-definition-lists" role="note">
@@ -1377,7 +1384,7 @@ dans le cas d’un lien situé dans le corps de texte, le texte muni du lien est
 <a href="#" class="icon icon--before icon--cart">link with icon</a><br>
 <a href="#" class="icon icon--before icon--pdf">link with icon lorem <span class="text-dimmed">(PDF, 43 pages, 2Mb, English)</span></a><br>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-08-links" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-08-links" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-04-typography-08-links" role="note">
@@ -1414,7 +1421,7 @@ dans le cas d’un lien situé dans le corps de texte, le texte muni du lien est
 	<small class="pull-right"><a href="#" class="icon icon--before icon--power">Back to top</a></small>
 </div>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-09-top-link" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-09-top-link" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-04-typography-09-top-link" role="note">
@@ -1447,7 +1454,7 @@ dans le cas d’un lien situé dans le corps de texte, le texte muni du lien est
     <div class="clearfix">
       <small class="hidden-print"><a href="#" class="icon icon--before icon--power">Back to top</a><span class="text-dimmed">Last edition: 21.03.2014</span></small>
     </div>
-    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-10-end-page-link" aria-expanded="false" title="Show Source Code">&lt;/&gt;</button>
+    <button type="button" class="show-code" data-toggle="collapse" data-target="#code-04-typography-10-end-page-link" aria-expanded="false" aria-label="Show source code">&lt;/&gt;</button>
   </div>
 
   <div class="code-block collapse" aria-expanded="false" id="code-04-typography-10-end-page-link" role="note">
